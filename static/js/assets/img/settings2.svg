@@ -1,0 +1,33 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  d: "M19.95 11.112c.067.606.066 1.217-.004 1.819-.028.234-.239.41-.468.392l-.1-.002c-.706 0-1.364.435-1.636 1.084-.289.69-.108 1.492.448 1.996.175.158.196.425.048.608-.38.474-.815.904-1.294 1.28-.184.142-.446.121-.604-.051-.476-.523-1.323-.72-1.981-.45-.681.278-1.121.964-1.095 1.705.008.233-.164.433-.396.458-.292.033-.585.049-.878.049-.308 0-.616-.018-.921-.053-.234-.027-.407-.232-.393-.468.042-.75-.392-1.447-1.082-1.736-.66-.277-1.516-.08-1.995.448-.159.176-.425.196-.609.049-.467-.376-.894-.807-1.265-1.28-.144-.184-.123-.446.048-.604.548-.501.727-1.296.448-1.978-.28-.683-.95-1.114-1.646-1.096-.23 0-.5-.168-.525-.393-.068-.606-.067-1.219.004-1.82.027-.23.208-.4.462-.392.781 0 1.464-.424 1.74-1.082.29-.69.11-1.492-.447-1.996-.174-.158-.195-.424-.048-.608.379-.473.815-.903 1.294-1.28.184-.142.447-.121.604.051.476.524 1.327.718 1.98.451.682-.28 1.122-.965 1.096-1.707-.008-.232.164-.432.396-.457.6-.067 1.202-.065 1.8.004.234.028.406.232.392.468-.042.749.392 1.447 1.081 1.736.662.277 1.519.08 1.995-.448.158-.175.426-.195.608-.049.466.373.893.804 1.268 1.28.144.183.123.446-.049.603-.546.501-.726 1.297-.447 1.979.273.665.923 1.096 1.656 1.096.227 0 .49.169.515.394zm-7.938 3.573c1.472 0 2.669-1.197 2.669-2.668 0-1.472-1.197-2.669-2.669-2.669-1.471 0-2.668 1.197-2.668 2.669 0 1.471 1.197 2.668 2.668 2.668z"
+});
+
+var SvgSettings2 = function SvgSettings2(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgSettings2, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/settings2.svg";
+export { ForwardRef as ReactComponent };

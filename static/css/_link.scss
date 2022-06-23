@@ -1,0 +1,30 @@
+.editor__link-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  .editor__component-select {
+    margin-top: 0;
+    min-height: 40px;
+
+    .react-select__control {
+      min-height: 40px;
+    }
+  }
+}
+
+.editor__link-active, .editor__link-slide-active {
+  overflow: inherit !important;
+  z-index: 100;
+  position: relative;
+
+  .react-swipeable-view-container {
+    will-change: inherit !important;
+  }
+}
+
+.editor__link-active-first {
+
+  .react-swipeable-view-container {
+    transform: inherit !important;
+  }
+}

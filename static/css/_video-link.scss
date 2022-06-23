@@ -1,0 +1,80 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-arrangement{
+  position: relative;
+
+  .editor__elements-arrangement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .editor__elements-arrangement-list-item {
+      cursor: pointer;
+
+      .editor__elements-arrangement-list-item-icon{
+        margin-bottom: 6px;
+
+        svg {
+          fill: $default;
+        }
+        g {
+          fill: $default;
+        }
+      }
+
+      .editor__elements-arrangement-list-item-label{
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: $default;
+        text-transform: uppercase;
+      }
+
+
+      &:hover{
+
+        &:not(.editor__elements-arrangement-list-item-active) {
+
+          .editor__elements-arrangement-list-item-icon {
+
+            svg {
+              fill: $default_hover_dark;
+            }
+
+            g {
+              fill: $default_hover_dark
+            }
+          }
+
+          .editor__elements-arrangement-list-item-label {
+            color: $default_hover_dark
+          }
+
+        }
+
+      }
+    }
+
+    .editor__elements-arrangement-list-item-active {
+      cursor: default;
+
+      .editor__elements-arrangement-list-item-icon {
+
+        svg {
+          fill: $active;
+        }
+        g {
+          fill: $active;
+        }
+      }
+
+      .editor__elements-arrangement-list-item-label{
+        color: $active;
+      }
+    }
+  }
+}

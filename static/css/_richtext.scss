@@ -1,0 +1,83 @@
+///// Custom class
+.align-right{
+  text-align: right!important;
+}
+.align-left{
+  text-align: left!important;
+}
+.align-center{
+  text-align: center!important;
+}
+.align-justify{
+  text-align: justify!important;
+}
+
+
+.DraftEditor-editorContainer {
+  min-width: 10px;
+}
+.DraftEditor-root {
+  display: inline-block;
+
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: text;
+}
+.DraftEditor-root:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 45px;
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 15px;
+  margin: 15px;
+  min-height: 150px;
+}
+
+
+// Navba
+
+.DraftEditor-root,
+.public-DraftEditor-block {
+  position: relative
+}
+
+.DraftEditor-editorContainer {
+  background-color: rgba(255, 255, 255, 0);
+  border-left: .1px solid transparent;
+  position: relative;
+  z-index: 1
+}
+
+.DraftEditor-alignCenter .public-DraftStyleDefault-block {
+  text-align: center
+}
+
+.DraftEditor-alignCenter .public-DraftEditorPlaceholder-root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.public-DraftEditorPlaceholder-root {
+  color: #9197a3;
+  position: absolute;
+  z-index: 0;
+  width: 100%
+}
+
+.public-DraftEditorPlaceholder-hasFocus {
+  color: #bdc1c9
+}
+
+.DraftEditorPlaceholder-hidden {
+  display: none
+}
+
+// Resize
+.editor__node-text-resize {
+  position: relative;
+}

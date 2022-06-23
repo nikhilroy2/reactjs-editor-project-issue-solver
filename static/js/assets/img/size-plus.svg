@@ -1,0 +1,33 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  fill: "#312E55",
+  d: "M15.0742188,17.4972527 L8.91015625,17.4972527 L7.73828125,21 L4,21 L10.3515625,4 L13.609375,4 L19.9960938,21 L16.2578125,21 L15.0742188,17.4972527 Z M9.859375,14.6600275 L14.125,14.6600275 L11.9804688,8.2967033 L9.859375,14.6600275 Z"
+});
+
+var SvgSizePlus = function SvgSizePlus(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgSizePlus, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/size-plus.svg";
+export { ForwardRef as ReactComponent };

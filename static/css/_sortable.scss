@@ -1,0 +1,18 @@
+@import "../../../assets/scss/variables";
+
+.editor__sortable-create-item {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+
+  svg {
+    fill: $text_dark
+  }
+
+  &:hover {
+    svg {
+      fill: $default_hover
+    }
+  }
+}

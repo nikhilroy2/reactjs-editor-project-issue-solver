@@ -1,0 +1,80 @@
+@import "../../../assets/scss/variables";
+
+.editor__block_sides-bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: $zIndex_sides;
+
+  &:hover {
+
+    .editor__divider-bottom{
+      background: rgba(0, 0, 0, 0.15);
+      height: 20px;
+      font-size: 12px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: 400;
+      font-family: $font_default;
+
+      &:before{
+        content: "Divider";
+      }
+    }
+
+    .editor__resizeblock-bottom {
+      opacity: 1;
+
+      .ui-resizable-n {
+
+        &:before {
+          transform: scale(1);
+        }
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.editor__block_sides-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &:hover {
+
+    .editor__divider-top{
+      background: rgba(0, 0, 0, 0.15);
+      height: 20px;
+      font-size: 12px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: 400;
+      font-family: $font_default;
+
+      &:before{
+        content: "Divider";
+      }
+    }
+
+    .editor__resizeblock-top {
+      opacity: 1;
+
+      .ui-resizable-s {
+
+        &:before {
+          transform: scale(1);
+        }
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}

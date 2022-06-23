@@ -1,0 +1,19 @@
+@import "../variables";
+
+.scrollbar-light {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background_grey;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $default;
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: $active;
+  }
+}

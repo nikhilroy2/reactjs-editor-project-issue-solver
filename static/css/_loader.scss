@@ -1,0 +1,16 @@
+@import "../../../assets/scss/variables";
+
+.editor__loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($background_light, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: $zIndex_block + $zIndex_sides;
+  font-family: $font_default;
+  font-weight: normal;
+}

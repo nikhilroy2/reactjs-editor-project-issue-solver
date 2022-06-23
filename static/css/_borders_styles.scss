@@ -1,0 +1,70 @@
+@import "../../../../assets/scss/variables";
+
+.border-config-font {
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-dark;
+  font-weight: 400;
+}
+
+.border-svg {
+  cursor: pointer;
+
+  &:hover {
+    path:last-child {
+      transition: all 0.5s ease;
+      fill: $default;
+    }
+  }
+
+  &.active {
+    path:first-child {
+      fill: $active_light;
+    }
+    path:last-child {
+      fill: $active;
+    }
+  }
+}
+
+.editor__border-config-wrapper {
+  .editor__border-config-wrapper_title {
+    @extend .border-config-font;
+    margin: 0 0 8px 16px;
+  }
+
+  .editor__border-config-wrapper_borders {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .editor__rangeslider-borders-wrapper {
+    .editor__rangeslider-borders-wrapper_label {
+      @extend .border-config-font;
+      padding: 0px;
+    }
+
+    .editor__rangeslider-borders-wrapper_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .range-slider-border {
+        width: 100%;
+      }
+
+      .editor__rangeslider-borders-wrapper_info {
+        border-radius: 4px;
+        background-color: $background_grey;
+        width: 64px;
+        height: 36px;
+        @extend .border-config-font;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

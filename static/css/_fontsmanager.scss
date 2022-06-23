@@ -1,0 +1,97 @@
+.editor__tabs-container {
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+.editor__tabs-wrapper {
+  margin: 0px;
+}
+
+
+.editor__fontsmanager-wrapper {
+  height: 464px;
+  padding: 2px 16px 8px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .ReactVirtualized__Grid__innerScrollContainer {
+    min-height: 458px;
+  }
+
+  &.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.editor__fontsmanager-preloader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor__fontsmanager-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding-top: 8px;
+}
+
+.editor__not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .editor__not-found-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 120px;
+      width: 140px;
+    }
+  }
+  .editor__not-found_text {
+    margin-top: 16px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #929fb7;
+    font-weight: 400;
+  }
+}
+
+.editor__filters-wrapper {
+  padding: 0px 24px 8px 24px;
+  display: flex;
+  justify-content: space-between;
+
+  .editor__input-wrapper {
+    position: relative;
+    max-width: 220px;
+    width: 100%;
+  }
+
+  .editor__select-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .select-title {
+      margin-right: 8px;
+      font-size: 14px;
+      line-height: 24px;
+      color: #929fb7;
+      font-weight: 400;
+    }
+  }
+}

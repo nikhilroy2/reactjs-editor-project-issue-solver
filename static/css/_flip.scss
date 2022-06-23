@@ -1,0 +1,45 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-flip{
+  position: relative;
+
+  .editor__elements-flip-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+
+    .editor__elements-flip-list-item {
+      margin-left: 4px;
+      margin-right: 4px;
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      svg {
+        fill: $default;
+      }
+
+      &:hover {
+        &:not(.editor__elements-flip-list-item-active) {
+
+          svg {
+            fill: $default;
+          }
+        }
+      }
+    }
+
+    .editor__elements-flip-list-item-active {
+      background-color: $active_light;
+
+      svg {
+        fill: $active;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("g", {
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#929FB7",
+  d: "M122,0 C124.209139,-4.05812251e-16 126,1.790861 126,4 L126,68 C126,70.209139 124.209139,72 122,72 L4,72 C1.790861,72 2.705415e-16,70.209139 0,68 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L122,0 Z M52,8 L20,8 C17.8578046,8 16.1089211,9.68396847 16.0048953,11.8003597 L16,12 L16,60 C16,62.1421954 17.6839685,63.8910789 19.8003597,63.9951047 L20,64 L52,64 C54.1421954,64 55.8910789,62.3160315 55.9951047,60.1996403 L56,60 L56,12 C56,9.790861 54.209139,8 52,8 Z M106,8 L74,8 C71.8578046,8 70.1089211,9.68396847 70.0048953,11.8003597 L70,12 L70,60 C70,62.1421954 71.6839685,63.8910789 73.8003597,63.9951047 L74,64 L106,64 C108.142195,64 109.891079,62.3160315 109.995105,60.1996403 L110,60 L110,12 C110,9.790861 108.209139,8 106,8 Z M32.5,50 C33.3284271,50 34,50.6715729 34,51.5 C34,52.3284271 33.3284271,53 32.5,53 L25.5,53 C24.6715729,53 24,52.3284271 24,51.5 C24,50.6715729 24.6715729,50 25.5,50 L32.5,50 Z M37.5,44 C38.3284271,44 39,44.6715729 39,45.5 C39,46.3284271 38.3284271,47 37.5,47 L25.5,47 C24.6715729,47 24,46.3284271 24,45.5 C24,44.6715729 24.6715729,44 25.5,44 L37.5,44 Z M42.5,38 C43.3284271,38 44,38.6715729 44,39.5 C44,40.3284271 43.3284271,41 42.5,41 L25.5,41 C24.6715729,41 24,40.3284271 24,39.5 C24,38.6715729 24.6715729,38 25.5,38 L42.5,38 Z M96.5,38 C97.3284271,38 98,38.6715729 98,39.5 C98,40.3284271 97.3284271,41 96.5,41 L79.5,41 C78.6715729,41 78,40.3284271 78,39.5 C78,38.6715729 78.6715729,38 79.5,38 L96.5,38 Z M46,16 C47.1045695,16 48,16.8954305 48,18 L48,32 C48,33.1045695 47.1045695,34 46,34 L26,34 C24.8954305,34 24,33.1045695 24,32 L24,18 C24,16.8954305 24.8954305,16 26,16 L46,16 Z M100,16 C101.104569,16 102,16.8954305 102,18 L102,32 C102,33.1045695 101.104569,34 100,34 L80,34 C78.8954305,34 78,33.1045695 78,32 L78,18 C78,16.8954305 78.8954305,16 80,16 L100,16 Z",
+  opacity: 0.2
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#929FB7",
+  fillRule: "nonzero",
+  d: "M36,0 C38.209139,0 40,1.790861 40,4 L40,52 C40,54.209139 38.209139,56 36,56 L4,56 C1.790861,56 0,54.209139 0,52 L0,4 C0,1.790861 1.790861,0 4,0 L36,0 Z M90,0 C92.209139,0 94,1.790861 94,4 L94,52 C94,54.209139 92.209139,56 90,56 L58,56 C55.790861,56 54,54.209139 54,52 L54,4 C54,1.790861 55.790861,0 58,0 L90,0 Z M36,2 L4,2 C2.8954305,2 2,2.8954305 2,4 L2,52 C2,53.1045695 2.8954305,54 4,54 L36,54 C37.1045695,54 38,53.1045695 38,52 L38,4 C38,2.8954305 37.1045695,2 36,2 Z M90,2 L58,2 C56.8954305,2 56,2.8954305 56,4 L56,52 C56,53.1045695 56.8954305,54 58,54 L90,54 C91.1045695,54 92,53.1045695 92,52 L92,4 C92,2.8954305 91.1045695,2 90,2 Z",
+  transform: "translate(16 8)"
+}));
+
+var SvgCardAlignStretch = function SvgCardAlignStretch(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 126,
+    height: 72,
+    viewBox: "0 0 126 72",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgCardAlignStretch, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/card_align_stretch.svg";
+export { ForwardRef as ReactComponent };

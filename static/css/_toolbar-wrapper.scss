@@ -1,0 +1,8 @@
+@import "../../../assets/scss/variables";
+
+.editor__toolbar{
+  position: absolute !important;
+  z-index: 10000;
+  font-family: $font_default;
+  display: flex;
+}

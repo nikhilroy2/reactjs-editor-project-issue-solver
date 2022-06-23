@@ -1,0 +1,57 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-select-button{
+  position: relative;
+  font-family: $font_default;
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+
+  .editor__elements-select-button-item{
+    min-width: 32px;
+    min-height: 32px;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: solid 2px $default;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+
+    span {
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: 0.58px;
+      text-align: center;
+      color: $default;
+    }
+  }
+
+  .editor__elements-select-button-item-active {
+    border: solid 2px $active;
+    background-color: $active_light;
+    cursor: default;
+
+    span {
+      color: $active;
+    }
+  }
+
+  .editor__elements-select-button-item-no-active {
+
+    &:hover {
+      border: 2px solid $default_hover_dark;
+
+      span {
+        color: $default_hover_dark;
+      }
+    }
+  }
+}

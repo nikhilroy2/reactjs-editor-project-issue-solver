@@ -1,0 +1,54 @@
+@import "bootstrap/bootstrap-grid";
+@import "bootstrap/bootstrap";
+@import "body/body";
+@import "fonts/index";
+@import "jquery/index";
+@import "scroll/scroll";
+@import "sortable/sortable";
+@import "animations/animations";
+@import "slider/slick";
+@import "resize/resize";
+@import "font_awesome/fontawesome";
+@import "font_awesome/brands";
+@import "font_awesome/duotone";
+@import "font_awesome/light";
+@import "font_awesome/regular";
+@import "font_awesome/solid";
+@import "navbar";
+@import "table/fix-table-responsive";
+@import "video/video";
+
+@import "../../../vendors/scss/body";
+@import "../../../vendors/scss/slick";
+@import "../../../vendors/scss/rtl";
+
+.ui-rotatable-handle {
+  height: 16px;
+  cursor: pointer;
+  background-size: 100%;
+  top: -26px;
+  position: absolute;
+  width: 100%;
+
+  &:before{
+    content: " ";
+    width: 18px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../../assets/img/rotate_pin.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+}
+
+.dropdown:focus{
+  .dropdown-menu{
+    display: block;
+  }
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}

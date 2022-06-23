@@ -1,0 +1,35 @@
+@import "../../../assets/scss/variables";
+
+/* Header */
+.editor-wrapper-content-header {
+  .editor__block-border {
+    background-color: $color_header;
+  }
+  .editor__block-actions .editor__block-actions-body {
+    background-color: $color_header;
+
+    &:before {
+      border-top-color: $color_header;
+    }
+    &:after {
+      border-top-color: $color_header;
+    }
+  }
+}
+
+/* Footer */
+.editor-wrapper-content-footer {
+  .editor__block-border {
+    background-color: $color_footer;
+  }
+  .editor__block-actions .editor__block-actions-body {
+    background-color: $color_footer;
+
+    &:before {
+      border-top-color: $color_footer;
+    }
+    &:after {
+      border-top-color: $color_footer;
+    }
+  }
+}

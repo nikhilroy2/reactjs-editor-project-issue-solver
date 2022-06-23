@@ -1,0 +1,15 @@
+@import "../../../../../assets/scss/variables";
+
+.editor__sidebar-color-main-add-colorpicker {
+  position: absolute;
+  left: 65px;
+  top: -110px;
+}
+
+.editor__sidebar-color-main-add-square-active {
+  border: 3px solid $active !important;
+
+  svg {
+    fill: $active !important;
+  }
+}

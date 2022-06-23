@@ -1,0 +1,47 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("title", null, "Shape");
+
+var _ref3 = /*#__PURE__*/React.createElement("desc", null, "Created with Sketch.");
+
+var _ref4 = /*#__PURE__*/React.createElement("g", {
+  id: "Landing",
+  stroke: "none",
+  strokeWidth: 1,
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Artboard",
+  fill: "#3479b7",
+  fillRule: "nonzero"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M47.8498032,21.33508 C47.7738986,20.6603487 46.987169,20.1533181 46.3068846,20.1533181 C44.1074353,20.1533181 42.1557031,18.861899 41.3371829,16.8646732 C40.5009813,14.8190482 41.0401724,12.4333787 42.679356,10.929789 C43.1953291,10.45812 43.2580174,9.66855236 42.8252715,9.12008769 C41.6995607,7.6906148 40.4200759,6.3993743 39.0230728,5.2802992 C38.4760234,4.84131315 37.6733986,4.90239257 37.1990391,5.42763992 C35.7684593,7.01195451 33.1987738,7.60078161 31.2131078,6.77228028 C29.1467149,5.90305932 27.843655,3.80921373 27.9711748,1.56159799 C28.0131456,0.855612697 27.4971725,0.241782323 26.793313,0.159807303 C25.0005341,-0.0475412754 23.1920384,-0.0539706888 21.3939015,0.145519718 C20.698079,0.222315488 20.1821059,0.821679682 20.2055024,1.51873524 C20.2837288,3.74420521 18.9649522,5.80143887 16.9190982,6.63940573 C14.9571858,7.44076066 12.4055389,6.85693422 10.9778167,5.28672862 C10.5059576,4.76951804 9.71637049,4.70593829 9.16664211,5.13438724 C7.72820403,6.26292787 6.41996479,7.55523994 5.28389518,8.97292556 C4.84079053,9.52406916 4.90597924,10.3229238 5.42713175,10.797093 C7.09757021,12.3097911 7.63693984,14.7161776 6.76912625,16.7853771 C5.94060449,18.7581354 3.8920715,20.0295519 1.54688521,20.0295519 C0.78587396,20.0050844 0.243825343,20.5158655 0.160598109,21.2077419 C-0.050506163,23.0108351 -0.053006552,24.84804 0.150239354,26.6657779 C0.225608223,27.3433667 1.03627006,27.8459325 1.72405563,27.8459325 C3.81402364,27.7925327 5.82058582,29.086452 6.66232392,31.134756 C7.50138303,33.180381 6.9620134,35.5646217 5.32032942,37.0694616 C4.80685668,37.5411306 4.74166797,38.329448 5.17441386,38.8779127 C6.28958736,40.2982772 7.56925073,41.5907679 8.97125457,42.7191299 C9.52116155,43.1622237 10.321286,43.0997155 10.7979673,42.5744681 C12.233905,40.9862244 14.8034119,40.3984689 16.7812196,41.2285777 C18.8527919,42.0951197 20.1558518,44.1887866 20.028332,46.4376526 C19.9867183,47.143995 20.5051919,47.758897 21.2061938,47.8396218 C22.1233007,47.9466002 23.0459443,48 23.9710882,48 C24.8492606,48 25.7276115,47.9517794 26.6057838,47.854088 C27.301785,47.7772922 27.8174009,47.1779281 27.7940044,46.4796224 C27.7134562,44.2554025 29.0345546,42.1981689 31.0777296,41.3616308 C33.0528583,40.5549181 35.5937893,41.1453525 37.02169,42.7139507 C37.4962281,43.2300897 38.2802787,43.2924193 38.8330433,42.8653991 C40.2688024,41.7395374 41.5743626,40.4482969 42.7157902,39.0266822 C43.1587162,38.4767887 43.0962065,37.676684 42.572375,37.2026934 C40.9019366,35.6899953 40.359888,33.2832515 41.2277015,31.2154808 C42.0435428,29.268976 44.0159925,27.9620191 46.1375726,27.9620191 L46.4344044,27.9696986 C47.1225472,28.0255989 47.7556814,27.4955295 47.8390873,26.7931161 C48.0505487,24.9884155 48.0530491,23.1528179 47.8498032,21.33508 Z M24.0000892,32 C19.5884748,32 16,28.4115652 16,24 C16,19.5886132 19.5884748,16 24.0000892,16 C28.4115252,16 32,19.5886132 32,24 C32,28.4115652 28.4115252,32 24.0000892,32 Z",
+  id: "Shape"
+})));
+
+var SvgMainLoader = function SvgMainLoader(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "48px",
+    height: "48px",
+    viewBox: "0 0 48 48",
+    ref: svgRef
+  }, props), title === undefined ? _ref2 : title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref3, _ref4);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgMainLoader, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/main_loader.svg";
+export { ForwardRef as ReactComponent };

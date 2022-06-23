@@ -1,0 +1,33 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  d: "M11.1339746,0.57179677 L12,1.07179677 L11.0973213,2.63609958 L11.0973213,2.63609958 L9.99448679,4.54851205 L9.993,4.54679677 L8.99423175,6.27863865 L8.99423175,6.27863865 L6.9960138,9.74092108 L6.995,9.73979677 L5.99668538,11.4715801 L5.99668538,11.4715801 L4.89301756,13.3828314 L4.892,13.3827968 L4,14.9282032 L3.1339746,14.4282032 L3.9930285,12.9406132 C2.14557985,11.8886883 0.709092646,10.130864 5.15143483e-14,8.00862016 C1.16617054,4.5183876 4.29972093,2.01376744 7.99311628,2.01376744 C8.7327336,2.01376744 9.44990021,2.11420692 10.1333128,2.30288743 L11.1339746,0.57179677 Z M11.9969438,3.07873729 C13.8425912,4.13091331 15.2776184,5.88780854 15.9862326,8.00862016 C14.820062,11.4988217 11.6865116,14.0034419 7.99311628,14.0034419 C7.25443721,14.0034419 6.53815194,13.9032583 5.85552074,13.7150427 L6.92617912,11.8611792 C7.26582314,11.955034 7.62361334,12.0051783 7.99311628,12.0051783 C10.2003721,12.0051783 11.9896744,10.215814 11.9896744,8.00862016 C11.9896744,6.89333778 11.5328513,5.88476224 10.7961119,5.15980034 L11.9969438,3.07873729 Z M7.99311628,4.01206202 C5.78586047,4.01206202 3.99655814,5.80136434 3.99655814,8.00862016 C3.99655814,9.12514746 4.45441454,10.1347424 5.19262001,10.8598857 L6.26252485,9.00868246 C5.82019667,8.24435931 5.92606307,7.24968887 6.58012403,6.59562791 C6.97018478,6.20556716 7.48138475,6.01047415 7.99262362,6.0103489 L9.06379937,4.157096 C8.72304049,4.0625749 8.3639779,4.01206202 7.99311628,4.01206202 Z M9.72592783,7.01240405 C10.1656794,7.77621526 10.0590729,8.768648 9.40610853,9.4216124 C9.01707046,9.81065047 8.50752757,10.0057418 7.99763013,10.0068864 L9.72592783,7.01240405 Z"
+});
+
+var SvgTotalsVisibility = function SvgTotalsVisibility(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 15,
+    viewBox: "0 0 16 15",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgTotalsVisibility, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/totals_visibility.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,38 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("g", {
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("path", {
+  fillRule: "nonzero",
+  d: "M122 0a4 4 0 0 1 4 4v21a217.881 217.881 0 0 0-16-2.436V52a4 4 0 0 1-4 4H74a4 4 0 0 1-4-4V23.38c-2 .382-3.955.82-5.862 1.316L63 25a80.509 80.509 0 0 1-7 1.584V52a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V26.226C10.86 25.416 5.526 24.34 0 23V4a4 4 0 0 1 4-4h118zM18 26.53V52a2 2 0 0 0 2 2h32a2 2 0 0 0 2-2l.001-25.078c-10.694 1.676-22.694 1.545-36-.393zm54-3.509V52a2 2 0 0 0 2 2h32a2 2 0 0 0 2-2V22.349c-13.306-1.359-25.306-1.135-36 .672z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M122 0a4 4 0 0 1 4 4v60a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h118zM52 12H20a4 4 0 0 0-3.995 3.8L16 16v36a4 4 0 0 0 3.8 3.995L20 56h32a4 4 0 0 0 3.995-3.8L56 52V16a4 4 0 0 0-4-4zm54 0H74a4 4 0 0 0-3.995 3.8L70 16v36a4 4 0 0 0 3.8 3.995L74 56h32a4 4 0 0 0 3.995-3.8L110 52V16a4 4 0 0 0-4-4zM31.5 43.885a1.5 1.5 0 0 1 1.5 1.5v.115a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5v-.115a1.5 1.5 0 0 1 1.5-1.5h6zm54 0a1.5 1.5 0 0 1 1.5 1.5v.115a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5v-.115a1.5 1.5 0 0 1 1.5-1.5h6zm-46-6.231a1.5 1.5 0 0 1 1.5 1.5v.115a1.5 1.5 0 0 1-1.5 1.5h-14a1.5 1.5 0 0 1-1.5-1.5v-.115a1.5 1.5 0 0 1 1.5-1.5h14zm54 0a1.5 1.5 0 0 1 1.5 1.5v.115a1.5 1.5 0 0 1-1.5 1.5h-14a1.5 1.5 0 0 1-1.5-1.5v-.115a1.5 1.5 0 0 1 1.5-1.5h14zM46 20a2 2 0 0 1 2 2v10.538a2 2 0 0 1-2 2H26a2 2 0 0 1-2-2V22a2 2 0 0 1 2-2h20zm54 0a2 2 0 0 1 2 2v10.538a2 2 0 0 1-2 2H80a2 2 0 0 1-2-2V22a2 2 0 0 1 2-2h20z",
+  opacity: 0.2
+}));
+
+var SvgArrangementTop = function SvgArrangementTop(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 126,
+    height: 68,
+    viewBox: "0 0 126 68",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgArrangementTop, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/arrangement_top.svg";
+export { ForwardRef as ReactComponent };

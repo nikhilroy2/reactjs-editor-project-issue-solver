@@ -1,0 +1,164 @@
+@import "../../assets/scss/variables";
+
+/* Loader */
+.editor-preloader{
+  width:100%;
+  height:100%;
+  background-color: $background_grey;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: $font_default;
+
+  .main-loader {
+    svg {
+      width: 42px;
+      height: 42px;
+      fill: $active;
+    }
+  }
+}
+.editor-preloader__block{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.editor-preloader-loading-line {
+  position: absolute;
+  width: 100%;
+  bottom: -18px;
+  left: 0;
+  height: 4px;
+  background: $background_grey_hover;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .editor-preloader-loading-line-progress {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: $active;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+.editor-preloader__spinner{
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.Editor-default-loader{
+  border: 2px solid $border_light;
+  border-top: 2px solid $active;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spin 0.5s linear infinite;
+  display: inline-block;
+}
+
+#loader {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 30px);
+}
+
+#box {
+  width: 50px;
+  height: 50px;
+  background-image: url('../../assets/img/logo.svg');
+  animation: animate .5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+}
+
+#shadow {
+  width: 50px;
+  height: 5px;
+  background: $background_dark;
+  opacity: 0.1;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow .5s linear infinite;
+}
+
+@keyframes animate {
+  17% { border-bottom-right-radius: 3px; }
+  25% { transform: translateY(9px) rotate(22.5deg); }
+  50% {
+    transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+    border-bottom-right-radius: 40px;
+  }
+  75% { transform: translateY(9px) rotate(67.5deg); }
+  100% { transform: translateY(0) rotate(180deg); }
+}
+
+@keyframes shadow {
+  50% {
+    transform: scale(1.3,1);
+  }
+}
+
+@keyframes loader {
+  0% { left: -100px }
+  100% { left: 110%; }
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+.editor-preloader__progress{
+  width: 300px;
+  height: 6px;
+  background-color: #e8eaf3;
+  border-radius: 10px;
+  margin-top: 110px;
+  margin-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+
+  .editor-preloader__progress-line{
+    background-color: #d6dae6;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+.editor-preloader__text{
+  font-size: 12px;
+  text-align: center;
+  color: #a2aac1;
+  font-weight: 300;
+}

@@ -1,0 +1,96 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-icon_shape{
+  position: relative;
+  margin-bottom: 16px;
+  font-family: $font_default;
+
+  .editor__elements-icon_shape-list{
+    display: flex;
+    margin-left: -4px;
+    margin-right: -4px;
+
+    .editor__elements-icon_shape-item{
+      position: relative;
+      cursor: pointer;
+
+      &:hover{
+
+        .editor__elements-icon_shape-item-icon {
+          background-color: #e9ecf1;
+        }
+      }
+
+      .editor__elements-icon_shape-item-icon{
+        width: 84px;
+        height: 84px;
+        border-radius: 4px;
+        border: solid 2px $default;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4px;
+        margin-right: 4px;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 8px;
+      }
+    }
+
+    .editor__elements-icon_shape-item-active{
+
+      .editor__elements-icon_shape-item-icon{
+        border: solid 2px $active;
+        background-color: $active_light;
+      }
+
+      .editor__elements-icon_shape-circle, .editor__elements-icon_shape-square{
+        background-color: $active;
+      }
+
+      .editor__elements-icon_shape-none{
+
+        svg {
+          fill: $active;
+        }
+      }
+
+      .editor__elements-icon_shape-item-title{
+        color: $active;
+      }
+    }
+
+    .editor__elements-icon_shape-item-title{
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: $default;
+      text-transform: uppercase;
+    }
+
+    .editor__elements-icon_shape-preview{
+      width: 36px;
+      height: 36px;
+    }
+    .editor__elements-icon_shape-none{
+
+      svg{
+        width: 36px;
+        height: 36px;
+        fill: $default;
+      }
+    }
+    .editor__elements-icon_shape-circle{
+      background-color: $default;
+      border-radius: 50%;
+    }
+    .editor__elements-icon_shape-square{
+      border-radius: 2px;
+      background-color: $default;
+    }
+  }
+}

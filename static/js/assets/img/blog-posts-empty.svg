@@ -1,0 +1,62 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("title", null, "Placeholders/File-manager-empty Copy");
+
+var _ref3 = /*#__PURE__*/React.createElement("g", {
+  id: "Placeholders/File-manager-empty-Copy",
+  stroke: "none",
+  strokeWidth: 1,
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M29.3395844,31.9102347 L67.663676,31.9102347 L67.663676,31.9102347 L83.3395844,45.7903003 L83.3395844,99.9102347 C83.3395844,101.014804 82.4441539,101.910235 81.3395844,101.910235 L29.3395844,101.910235 C28.2350149,101.910235 27.3395844,101.014804 27.3395844,99.9102347 L27.3395844,33.9102347 C27.3395844,32.8056652 28.2350149,31.9102347 29.3395844,31.9102347 Z",
+  id: "Rectangle",
+  fill: "#3479B7",
+  opacity: 0.200000003,
+  transform: "translate(55.339584, 66.910235) rotate(-12.000000) translate(-55.339584, -66.910235) "
+}), /*#__PURE__*/React.createElement("g", {
+  id: "Group",
+  transform: "translate(26.000000, 17.982224)"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M4.04004816,2.0177761 L48.084676,2.0177761 L48.084676,2.0177761 L66,17.8807082 L66,80.0414816 C66.0000021,81.1369059 65.1187976,82.0285031 64.0234486,82.0413462 C39.4417663,82.3295687 24.1700167,82.321712 18.2081998,82.0177761 C12.6545163,81.734647 7.14251656,80.7084613 1.67220054,78.939219 L1.67220113,78.9392172 C0.728161137,78.6338902 0.150684705,77.6826102 0.315426375,76.704195 C0.935950329,73.0188489 1.49747487,67.2546051 2,59.4114634 C2.5725431,50.475519 2.58601931,32.0239625 2.04042862,4.05679383 C2.01887577,2.95242985 2.89667476,2.03970079 4.0010389,2.01815657 C4.01404044,2.01790293 4.02704415,2.0177761 4.04004816,2.0177761 Z",
+  id: "Rectangle",
+  fill: "#F8F9FA"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M49.1245411,1 L64.9731219,18.928021 L50.9158126,19.007841 C49.811261,19.0141128 48.9107605,18.1237811 48.9044887,17.0192294 C48.9044151,17.0062711 48.9044675,16.9933124 48.9046458,16.9803551 L49.1245411,1 L49.1245411,1 Z",
+  id: "Rectangle",
+  fill: "#EAECF1",
+  transform: "translate(56.924855, 10.009710) rotate(-7.000000) translate(-56.924855, -10.009710) "
+})), /*#__PURE__*/React.createElement("path", {
+  d: "M68.2706379,18 C44.9757746,18 25.8151496,35.9208691 23.7847688,58.6953809 C27.6553938,53.2366309 32.3968879,47.9841309 38.3162629,41.945625 C38.7562629,41.491875 39.4850129,41.4827441 39.936507,41.9296191 C40.3880012,42.371875 40.3948762,43.0983691 39.9525129,43.5498633 C39.0610188,44.4573633 38.155882,45.3992383 37.2460188,46.3526074 C36.7257746,46.8957324 36.2170246,47.4366016 35.7175129,47.9682324 C35.625882,48.0667383 35.5341438,48.1653516 35.4425129,48.2661133 C28.1275129,56.0989941 22.8978938,62.9166309 19.1005305,71.384375 C18.8415363,71.961875 19.1005305,72.6402441 19.6757746,72.8991309 C19.8292805,72.9678809 19.9874055,73 20.1455305,73 C20.5832746,73 21.0026496,72.7478809 21.1927863,72.3239941 C22.5449055,69.3104883 24.1146613,66.5146191 25.8792805,63.794375 C41.8842805,63.3841309 56.4524055,54.4810059 64.0882746,40.3139941 C64.2785188,39.95875 64.2692805,39.5302441 64.0630305,39.181875 C63.8545246,38.838125 63.4809113,38.625 63.0776496,38.625 L58.8335188,38.625 L66.4441438,34.2753809 C66.6847688,34.1378809 66.8703938,33.915625 66.9597688,33.654375 C68.5913996,28.910625 69.4163996,24.029375 69.4163996,19.1458691 C69.4163996,18.5133691 68.9031379,18 68.2706379,18 Z",
+  id: "Path",
+  fill: "#3479B7",
+  fillRule: "nonzero",
+  transform: "translate(44.208200, 45.500000) rotate(-60.000000) translate(-44.208200, -45.500000) "
+}));
+
+var SvgBlogPostsEmpty = function SvgBlogPostsEmpty(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "120px",
+    height: "120px",
+    viewBox: "0 0 120 120",
+    ref: svgRef
+  }, props), title === undefined ? _ref2 : title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref3);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgBlogPostsEmpty, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/blog-posts-empty.svg";
+export { ForwardRef as ReactComponent };

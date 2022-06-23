@@ -1,0 +1,43 @@
+@import "../../../assets/scss/variables";
+
+.editor__button {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: $text_light;
+  background-color: $background_color;
+
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: $font_default!important;
+  position: relative;
+}
+
+.editor__button-default {
+  color: $active;
+  background-color: rgba($active, 0.1);
+}
+
+.editor__button-xs {
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.editor__button-sm {
+  padding: 4px 24px;
+  font-size: 12px;
+}
+
+.editor__button-md {
+  padding: 6px 18px;
+  font-size: 14px;
+}
+
+.editor__button-md {
+  padding: 10px 32px;
+  font-size: 16px;
+}

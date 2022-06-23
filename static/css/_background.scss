@@ -1,0 +1,80 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-background{
+  position: relative;
+
+  .editor__elements-background-container{
+    width: 100%;
+    height: 124px;
+    border-radius: 4px;
+    background-color: $background_grey;
+
+    .editor__elements-background-container-handle{
+      width: 24px;
+      height: 24px;
+      opacity: 0.95;
+      box-shadow: 0 2px 12px 0px $shadow_grey_medium;
+      background-color: $background_light;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  }
+
+  .editor__elements-background-delete{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -28px;
+
+    svg {
+      fill: $default;
+    }
+
+    &:hover {
+
+      svg {
+        fill: $default_hover;
+      }
+    }
+  }
+}
+
+.editor__elements-background-empty{
+  position: relative;
+  font-family: $font_default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 122px;
+  border-radius: 4px;
+  background-color: $background_grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $background_grey_hover;
+  }
+
+  .editor__elements-background-empty-container{
+    position: relative;
+
+    .editor__elements-background-empty-container-icon{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .editor__elements-background-empty-container-title{
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: $default;
+      text-transform: uppercase;
+    }
+  }
+}

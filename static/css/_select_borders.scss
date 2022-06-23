@@ -1,0 +1,110 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-select_borders {
+  position: relative;
+
+  .elements-select_borders_select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: $background_grey;
+
+    .elements-select_borders_select--text {
+      font-size: 14px;
+      line-height: 24px;
+      color: $text-dark;
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+
+    .elements-select_borders_select--triangle {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 4px 0 4px;
+      border-color: $default transparent transparent transparent;
+    }
+  }
+
+  .elements-select_borders_list {
+    width: 268px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 16px 16px 0 16px;
+    border-radius: 6px;
+    box-shadow: 0 24px 80px 0 $shadow_grey_medium;
+    background-color: $background_light;
+
+    // &.open {
+    //   opacity: 1;
+    //   z-index: 1000;
+    // }
+
+    .elements-select_borders_list__item {
+      cursor: pointer;
+      min-width: 236px;
+      min-height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      text-transform: capitalize;
+      font-size: 14px;
+      line-height: 24px;
+      color: $default;
+      transition: all 0.5s ease;
+      font-weight: 400;
+
+      &:hover {
+        color: $active;
+        border-color: $active !important;
+      }
+
+      &.border-inset:hover,
+      &.border-outset:hover {
+        border-color: $active_light !important;
+      }
+
+      &.border-none {
+        color: $text-dark;
+        background-color: $background_grey;
+      }
+
+      &.active {
+        color: $active;
+        background-color: $active_light;
+        border-color: $active !important;
+
+        &.border-inset,
+        &.border-outset {
+          border-color: $active_light !important;
+        }
+      }
+
+      .elements-select_borders_list__item-icon {
+        margin-right: 6px;
+        width: 16px;
+        height: 16px;
+
+        path {
+          fill: $default;
+        }
+
+        &.active {
+          transition: all 0.5s ease;
+          path {
+            fill: $active;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../../assets/scss/variables';
+
+.editor__elements-textarea {
+  position: relative;
+
+  textarea {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 4px;
+    background-color: $background_grey;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 14px;
+    padding: 12px;
+    transition: all 0.15s ease;
+
+    &.filter {
+      padding-right: 40px;
+      color: $text_dark;
+      transition: all 0.3s ease;
+
+      &::placeholder {
+        color: $default;
+      }
+
+      &:hover {
+        background: $default_hover;
+      }
+    }
+
+    &:hover {
+      background-color: $default_hover;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $background_light;
+      box-shadow: 0px 0px 0px 2px $active;
+
+      &:hover {
+        background-color: $background_light;
+      }
+    }
+  }
+}
+
+.editor__elements-textarea-grey {
+  textarea {
+    background-color: $background_grey_hover;
+  }
+}

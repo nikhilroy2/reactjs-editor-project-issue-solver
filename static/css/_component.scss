@@ -1,0 +1,133 @@
+@import "../../../../assets/scss/variables";
+$maxHeight: 530px;
+
+.editor__component {
+  position: relative;
+  display: flex;
+  min-height: $maxHeight;
+  overflow: hidden;
+
+
+  .editor__component-render-title {
+    color: $default;
+    font-family: $font_default;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    display: block;
+    padding-bottom: 8px;
+  }
+  .editor__component-preview {
+    width: 100%;
+    padding: 24px;
+
+    max-height: $maxHeight;
+    overflow-x: auto;
+
+    background: inherit !important;
+  }
+  .editor__component-settings-block {
+    width: 300px;
+    flex-basis: 300px;
+    flex-shrink: 0;
+    max-height: $maxHeight;
+    position: relative;
+    border-left: 1px solid $border_grey;
+
+    .editor__component-settings-header {
+      border-bottom: 1px solid $border_grey;
+    }
+  }
+  .editor__component-settings {
+    overflow-x: auto;
+    max-height: $maxHeight - 48px;
+    height: 100%;
+    position: relative;
+
+    .editor__collapse-title {
+      background: $background_grey;
+    }
+
+    .editor__collapse-title.open {
+      background: $background_light;
+    }
+
+    .editor__collapse-component {
+      background: $background_grey;
+    }
+
+    .open + .open {
+      background: $background_light;
+    }
+  }
+
+  .editor__component-settings-body {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+
+  .editor__component-settings-base {
+    padding-left: 16px;
+    cursor: default!important;
+  }
+
+  .editor__component-settings-back {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.5px;
+    color: $default;
+    text-transform: uppercase;
+    font-family: $font_default;
+
+    .editor__component-settings-back-title {
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $default_hover_dark;
+      }
+    }
+
+    .editor__component-settings-back-icon {
+      position: relative;
+      width: 38px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        svg {
+          fill: $default_hover_dark;
+        }
+      }
+
+      svg {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        fill: $default;
+      }
+    }
+
+    .editor__component-settings-back-icon {
+      position: relative;
+    }
+  }
+}

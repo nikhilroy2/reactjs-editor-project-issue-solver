@@ -1,0 +1,82 @@
+@import "../../variables";
+
+.main-loader {
+  height: 150px;
+  width: 230px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .main-loader-header {
+    font-size: 18px;
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .main-loader-description {
+    font-size: 14px;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: $default;
+  }
+}
+
+.main-loader-cog svg {
+  fill: $active;
+  animation: 1.5s linear rotateWithBoost infinite;
+}
+
+.main-loader-languages svg {
+  animation: 1.5s linear animationPulse infinite;
+}
+
+@keyframes spinBasic {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinBasicReverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes animationPulse {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  90%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateWithBoost {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  90%,
+  100% {
+    transform: rotate(360deg);
+  }
+}

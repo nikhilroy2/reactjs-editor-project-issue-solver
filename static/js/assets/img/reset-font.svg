@@ -1,0 +1,43 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("title", null, "Icons/Reset 16@2x");
+
+var _ref3 = /*#__PURE__*/React.createElement("g", {
+  id: "Symbols",
+  stroke: "none",
+  strokeWidth: 1,
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Icons/Reset-16",
+  fillRule: "nonzero"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M4,12.8003059 L5.60883256,12.800806 C5.80193196,14.5457105 7.24352611,15.9147835 9.02159699,15.997084 L9.19127439,16.0010026 L14.1013051,16.0018026 L13.1677415,15.0278432 C12.8549371,14.7014063 12.8549371,14.1721473 13.1677415,13.8457103 C13.480546,13.5192734 13.9877021,13.5192734 14.3005066,13.8457103 L16.5660367,16.2099762 C16.8788411,16.5364131 16.8788411,17.0656721 16.5660367,17.3921091 L14.3005066,19.7563749 C13.9877021,20.0828119 13.480546,20.0828119 13.1677415,19.7563749 C12.8549371,19.4299379 12.8549371,18.900679 13.1677415,18.574242 L14.099705,17.6018826 L9.19127439,17.6010826 C6.45042666,17.6010826 4.2042432,15.4856741 4,12.8003059 Z M4.80810544,11.9997291 C5.24995533,11.9997291 5.60814544,12.3579193 5.60814544,12.7997692 L4.00000041,12.7997285 C4.00446769,12.3566025 4.36495692,11.9997291 4.80810544,11.9997291 Z M10.8330585,4.24415687 C11.145863,4.57059386 11.145863,5.09985279 10.8330585,5.42628978 L9.90109505,6.3986491 L14.8095256,6.39944914 C17.4880814,6.39944914 19.6942021,8.41979541 19.9837284,11.0180339 L20,11.1996891 L19.9944927,11.2895966 C19.9444122,11.688347 19.6041897,11.9960592 19.1926946,11.9960592 C18.7824054,11.9960592 18.4442515,11.6872116 18.3980371,11.2893208 L18.3919675,11.1997258 C18.1988681,9.45482128 16.7572739,8.08574823 14.9792031,8.00344773 L14.8095256,7.99952914 L9.89949497,7.9987291 L10.8330585,8.9726885 C11.145863,9.29912549 11.145863,9.82838442 10.8330585,10.1548214 C10.5202541,10.4812584 10.0130979,10.4812584 9.70029346,10.1548214 L7.43476333,7.79055559 C7.1219589,7.4641186 7.1219589,6.93485967 7.43476333,6.60842268 L9.70029346,4.24415687 C10.0130979,3.91771988 10.5202541,3.91771988 10.8330585,4.24415687 Z",
+  id: "Shape"
+})));
+
+var SvgResetFont = function SvgResetFont(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "24px",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title === undefined ? _ref2 : title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref3);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgResetFont, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/reset-font.svg";
+export { ForwardRef as ReactComponent };

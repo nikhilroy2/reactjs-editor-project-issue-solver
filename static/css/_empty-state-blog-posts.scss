@@ -1,0 +1,38 @@
+@import "../../../../assets/scss/variables";
+
+.editor-empty-state__blog-posts {
+  width: 100%;
+  min-height: 420px;
+  height: 100%;
+  background-color: $background_light;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font_default;
+  text-align: center;
+
+  .editor-empty-state__blog-posts-wrap {
+
+    .editor-empty-state__blog-posts-preview {
+      margin-bottom: 8px;
+    }
+
+    .editor-empty-state__blog-posts-title {
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $text_dark;
+    }
+
+    .editor-empty-state__blog-posts-description {
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: $default;
+    }
+
+    .editor-empty-state__blog-posts-actions {
+
+    }
+  }
+}

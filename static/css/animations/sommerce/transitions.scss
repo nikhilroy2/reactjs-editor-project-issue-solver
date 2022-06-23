@@ -1,0 +1,11 @@
+$sizes: 1, 2, 3, 4, 5, 6, 7, 8, 9;
+@each $size in $sizes {
+  .animate-transition-0#{$size} {
+    $size-string: "0.#{$size}s";
+    -webkit-transition: all #{$size-string} ease;
+    -moz-transition: all #{$size-string} ease;
+    -o-transition: all #{$size-string} ease;
+    -ms-transition: all #{$size-string} ease;
+    transition: all #{$size-string} ease;
+  }
+}

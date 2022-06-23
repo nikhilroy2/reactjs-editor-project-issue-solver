@@ -1,0 +1,66 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("title", null, "Center");
+
+var _ref3 = /*#__PURE__*/React.createElement("desc", null, "Created with Sketch.");
+
+var _ref4 = /*#__PURE__*/React.createElement("g", {
+  id: "Editor-fix",
+  stroke: "none",
+  strokeWidth: 1,
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Elements-Copy",
+  transform: "translate(-574.000000, -148.000000)",
+  fill: "#3479B7"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-8",
+  transform: "translate(466.000000, 50.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-6",
+  transform: "translate(16.000000, 65.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Center",
+  transform: "translate(92.000000, 33.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-3"
+}, /*#__PURE__*/React.createElement("polygon", {
+  id: "Rectangle-Copy",
+  opacity: 0.200000003,
+  points: "0 0 84 0 84 40 0 40"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M42,8 C43.1045695,8 44,8.8954305 44,10 L44,30 C44,31.1045695 43.1045695,32 42,32 C40.8954305,32 40,31.1045695 40,30 L40,10 C40,8.8954305 40.8954305,8 42,8 Z",
+  id: "Rectangle"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M50.7157288,16.281509 C51.0947571,16.6568542 51.0947571,17.2654092 50.7157288,17.6407545 L49.348,19 L59,19 C59.5522847,19 60,19.4477153 60,20 C60,20.5522847 59.5522847,21 59,21 L49.348,21 L50.7157288,22.3592455 C51.0947571,22.7345908 51.0947571,23.3431458 50.7157288,23.718491 C50.3367004,24.0938363 49.7221741,24.0938363 49.3431458,23.718491 L46.2842712,20.6796228 C45.9052429,20.3042775 45.9052429,19.6957225 46.2842712,19.3203772 L49.3431458,16.281509 C49.7221741,15.9061637 50.3367004,15.9061637 50.7157288,16.281509 Z M33.2842712,16.281509 C33.6341436,15.9350364 34.1846769,15.9083847 34.5654201,16.2015538 L34.6568542,16.281509 L37.7157288,19.3203772 C38.0656011,19.6668498 38.0925143,20.2120336 37.7964685,20.5890771 L37.7157288,20.6796228 L34.6568542,23.718491 C34.2778259,24.0938363 33.6632996,24.0938363 33.2842712,23.718491 C32.9343989,23.3720185 32.9074857,22.8268347 33.2035315,22.4497912 L33.2842712,22.3592455 L34.652,21 L25,21 C24.4477153,21 24,20.5522847 24,20 C24,19.4871642 24.3860402,19.0644928 24.8833789,19.0067277 L25,19 L34.652,19 L33.2842712,17.6407545 C32.9052429,17.2654092 32.9052429,16.6568542 33.2842712,16.281509 Z",
+  id: "Shape",
+  opacity: 0.5
+})))))));
+
+var SvgCenter = function SvgCenter(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "84px",
+    height: "40px",
+    viewBox: "0 0 84 40",
+    ref: svgRef
+  }, props), title === undefined ? _ref2 : title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref3, _ref4);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgCenter, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/center.svg";
+export { ForwardRef as ReactComponent };

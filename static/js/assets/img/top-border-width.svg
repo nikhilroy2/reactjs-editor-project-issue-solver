@@ -1,0 +1,39 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("g", {
+  fill: "none",
+  fillRule: "nonzero"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#E9ECF1",
+  d: "M35.125 38.228l1.544 1.545a5.937 5.937 0 0 1-2.351.62l-.318.009H6a5.945 5.945 0 0 1-2.657-.623l1.547-1.547c.282.082.577.133.88.15l.23.007h28c.39 0 .768-.056 1.125-.161zm4.33-34.56c.306.67.494 1.407.536 2.183l.009.335v28.178c0 .904-.197 1.761-.551 2.531l-1.565-1.565c.057-.232.094-.472.109-.718l.007-.248V6.186a4.06 4.06 0 0 0-.112-.952l1.567-1.566zM.55 3.655L2.116 5.22a4.044 4.044 0 0 0-.109.718L2 6.186v28.178c0 .328.039.647.113.952L.546 36.883A6.036 6.036 0 0 1 .009 34.7L0 34.364V6.186c0-.904.197-1.761.551-2.531zM34 .148c.954 0 1.857.225 2.658.624l-1.547 1.546L29.23 8.2H10.751L4.713 2.161h.002L3.331.776a5.937 5.937 0 0 1 2.351-.62L6 .148h28z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#929FB7",
+  d: "M34 .148c.954 0 1.857.225 2.658.624l-1.546 1.546a3.968 3.968 0 0 0-.912-.152L34 2.16H6c-.358 0-.704.047-1.034.136L3.407.74A5.945 5.945 0 0 1 6 .148h28z"
+}));
+
+var SvgTopBorderWidth = function SvgTopBorderWidth(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 40,
+    height: 41,
+    viewBox: "0 0 40 41",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgTopBorderWidth, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/top-border-width.svg";
+export { ForwardRef as ReactComponent };

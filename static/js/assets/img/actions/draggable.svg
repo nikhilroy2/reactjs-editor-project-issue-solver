@@ -1,0 +1,33 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  d: "M8.227 2.08l.033.03 1.655 1.758c.125.133.11.336-.033.453-.063.05-.143.079-.227.079H8.9v2.7h2.7v-.755c0-.19.144-.345.32-.345.078 0 .154.03.212.085L13.89 7.74c.134.126.147.344.03.487l-.03.033-1.758 1.655c-.133.125-.336.11-.453-.033-.05-.063-.079-.143-.079-.227V8.9H8.9v2.7h.755c.19 0 .345.144.345.32 0 .078-.03.154-.085.212L8.26 13.89c-.126.134-.344.147-.487.03l-.033-.03-1.655-1.758c-.125-.133-.11-.336.033-.453.063-.05.143-.079.227-.079H7.1V8.9H4.4v.755c0 .19-.144.345-.32.345-.078 0-.154-.03-.212-.085L2.11 8.26c-.134-.126-.147-.344-.03-.487l.03-.033 1.758-1.655c.133-.125.336-.11.453.033.05.063.079.143.079.227V7.1h2.7V4.4h-.755C6.155 4.4 6 4.256 6 4.08c0-.078.03-.154.085-.212L7.74 2.11c.126-.134.344-.147.487-.03z"
+});
+
+var SvgDraggable = function SvgDraggable(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgDraggable, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/draggable.svg";
+export { ForwardRef as ReactComponent };

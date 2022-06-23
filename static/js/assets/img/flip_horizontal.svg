@@ -1,0 +1,37 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("g", {
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M3.707 5.707l5.586 5.586a1 1 0 0 1 0 1.414l-5.586 5.586A1 1 0 0 1 2 17.586V6.414a1 1 0 0 1 1.707-.707z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M12.5 21v1.5a.5.5 0 1 1-1 0V21h1zm0-4v2h-1v-2h1zm9.207-11.293a1 1 0 0 1 .293.707v11.172a1 1 0 0 1-1.707.707l-5.586-5.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0zM12.5 13v2h-1v-2h1zm0-4v2h-1V9h1zm0-4v2h-1V5h1zM12 1a.5.5 0 0 1 .5.5V3h-1V1.5A.5.5 0 0 1 12 1z",
+  opacity: 0.3
+}));
+
+var SvgFlipHorizontal = function SvgFlipHorizontal(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgFlipHorizontal, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/flip_horizontal.svg";
+export { ForwardRef as ReactComponent };

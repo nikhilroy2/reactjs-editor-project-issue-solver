@@ -1,0 +1,22 @@
+@import "../../../../assets/scss/variables";
+
+.editor-edit-menu {
+  position: relative;
+}
+
+.editor-edit-menu__label {
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  color: $default;
+  margin-bottom: 8px;
+}
+
+.editor-edit-menu__action-delete {
+  width: 100%;
+
+  .confirm-delete {
+    font-weight: normal;
+    text-transform: initial;
+  }
+}

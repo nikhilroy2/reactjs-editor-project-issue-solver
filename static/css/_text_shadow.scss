@@ -1,0 +1,60 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-text_shadow{
+  position: relative;
+
+  .editor__elements-text_shadow-blanks{
+    display: flex;
+    width: 100%;
+    margin-left: -4px;
+    margin-right: -4px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+
+
+    .editor__elements-text_shadow-blank-item-col {
+      width: 25%;
+      padding-left: 4px;
+      padding-right: 4px;
+
+      .editor__elements-text_shadow-blank-item {
+        cursor: pointer;
+        width: 100%;
+        height: 61px;
+        border-radius: 4px;
+        background-color: $background_grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+
+        .editor__elements-text_shadow-blank-item-qub {
+          font-size: 22px;
+          color: #fff;
+        }
+
+        &:hover {
+          background: $active_light;
+        }
+      }
+
+      .editor__elements-text_shadow-blank-item-null{
+        width: 33px;
+        height: 33px;
+
+        svg {
+          fill: $default;
+        }
+      }
+
+      .editor__elements-text_shadow-blank-item-active{
+        box-shadow: 0px 0px 0px 2px $active;
+        background: $active_light;
+      }
+    }
+  }
+
+  .editor__elements-box_shadow-settings{
+
+  }
+}

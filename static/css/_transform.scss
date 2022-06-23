@@ -1,0 +1,200 @@
+@import '../../../assets/scss/variables';
+
+.editor__resizeicon {
+  position: relative !important;
+  transform: none !important;
+  z-index: 10;
+}
+.editor__resizeicon-pin {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: $background_dark;
+  border-radius: 50%;
+}
+
+.editor__image-resizable {
+  top: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  right: auto !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  .ui-resizable-handle {
+    width: 16px !important;
+    height: 16px !important;
+    background-position: center center !important;
+  }
+
+  .ui-resizable-ne {
+    background-image: url('../../../assets/img/rectangle-top-right.svg');
+    right: -8px !important;
+    top: -8px !important;
+    cursor: nesw-resize !important;
+  }
+
+  .ui-resizable-se {
+    right: -8px !important;
+    bottom: -8px !important;
+    background-image: url('../../../assets/img/rectangle-bottom-right.svg');
+    cursor: nwse-resize !important;
+  }
+
+  .ui-resizable-sw {
+    background-image: url('../../../assets/img/rectangle-bottom-left.svg');
+    left: -8px !important;
+    bottom: -8px !important;
+    cursor: nesw-resize !important;
+  }
+
+  .ui-resizable-nw {
+    background-image: url('../../../assets/img/rectangle-top-left.svg');
+    left: -8px !important;
+    top: -8px !important;
+    cursor: nwse-resize !important;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+.editor__action-element {
+  cursor: pointer;
+  position: relative;
+
+  display: flex; //padding/margin
+}
+
+.editor__image-resizable-active {
+  position: relative;
+  z-index: 100;
+  cursor: default;
+
+  &:after {
+    display: none;
+  }
+
+  .editor__action-element-hover {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.editor__action-element-hover {
+  top: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  right: auto !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: ' ';
+    background-color: rgba($background_light, 0.45);
+    background-image: url('../../../assets/img/background.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.editor__action-element-hover-only-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: ' ';
+    background-color: rgba($background_light, 0.45);
+    background-image: url('../../../assets/img/background.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 8%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.editor__action-element-hover-features {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: ' ';
+    background-color: rgba($background_light, 0.45);
+    background-image: url('../../../assets/img/background.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 8%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables";
+
+.Toastify__toast {
+  border-radius: 4px;
+  font-family: $font_default;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.Toastify__toast--error {
+  background: rgba($danger, 0.9);
+}
+
+.Toastify__toast--success {
+  background: $success;
+}

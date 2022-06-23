@@ -1,0 +1,129 @@
+@import "../../../../assets/scss/variables";
+
+.editor-sidebar__fonts {
+  position: relative;
+  padding: 16px;
+  height: 100vh;
+
+  &-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($background_light, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding-left: 80px;
+  }
+
+  &-shadow {
+    position: absolute;
+    height: 1px;
+    top: -4px;
+    left: 0;
+    width: 280px;
+    z-index: 10;
+    box-shadow: 0px 6px 8px 12px #f6f7f9;
+  }
+
+  &-current {
+    background: $background_light;
+    border-radius: 4px;
+    border: 1px solid $border_grey_bg;
+    padding: 16px;
+    margin-bottom: 8px;
+
+    &-wrapper {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-top: -8px;
+    }
+
+    &-label {
+      color: $default;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    &-headers {
+      padding-top: 8px;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    &-paragraph {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    &-button {
+
+      button {
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+
+  }
+
+  &-item {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &-headers {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-paragraph {
+      font-size: 14px;
+      line-height: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-wrapper {
+      padding: 16px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        cursor: pointer;
+        background: $background_grey_hover;
+      }
+    }
+
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &-list {
+    height: 100vh;
+  }
+
+  &-headers {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.editor-sidebar__fonts-wrapper {
+  overflow: hidden;
+}

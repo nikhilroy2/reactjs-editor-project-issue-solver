@@ -1,0 +1,95 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-container{
+  display: flex;
+  justify-content: space-between;
+  font-family: $font_default;
+
+  .editor__elements-container-item{
+    cursor: pointer;
+
+    svg {
+      path {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+
+      rect {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+
+      polygon{
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .editor__elements-container-item-title{
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $default;
+    text-transform: uppercase;
+  }
+
+  .editor__elements-container-item-active{
+    cursor: default;
+
+    .editor__elements-container-item-title{
+      color: $active;
+    }
+    svg {
+      path {
+        fill: $active;
+      }
+
+      rect {
+        fill: $active;
+      }
+
+      polygon{
+        fill: $active;
+      }
+    }
+  }
+
+  .editor__elements-container-item-no-active{
+
+    &:hover{
+
+      .editor__elements-container-item-title{
+        color: $default_hover_dark;
+      }
+
+      svg {
+        path {
+          fill: $default_hover_dark;
+        }
+
+        rect {
+          fill: $default_hover_dark;
+        }
+
+        polygon{
+          fill: $default_hover_dark;
+        }
+      }
+    }
+  }
+}

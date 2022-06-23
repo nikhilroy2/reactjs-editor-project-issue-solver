@@ -1,0 +1,68 @@
+@import "../../assets/scss/variables";
+
+.editor__container{
+  min-height: 100%;
+  width: 100%;
+}
+
+.editor-wrapper-snippet {
+  position: relative;
+}
+
+.editor__container-blocks{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+
+  transform-origin: top;
+}
+
+.editor-wrapper-content-page {
+  position: relative;
+}
+
+.editor-wrapper-content-page-height {
+  min-height: 150px;
+}
+
+.editor-wrapper-content-header {
+  position: relative;
+}
+
+.editor-wrapper-content-header-empty {
+  min-height: 50px;
+}
+
+.editor-wrapper-content-footer {
+  position: relative;
+}
+
+//Empty
+.editor-wrapper-content-footer-empty {
+  background-color: $background_light;
+}
+.editor-wrapper-content-page-empty {
+  background-color: $background_light;
+
+  background-image: url("../../assets/img/Empty-blocks.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: stretch;
+}
+.editor-wrapper-content-header-empty {
+  background-color: $background_light;
+}
+.editor-wrapper-content-navbar-empty {
+  background-color: $background_light;
+}
+
+.editor-wrapper-content-navbar {
+
+}
+
+.editor-wrapper-content-navbar-empty {
+  display: block;
+}

@@ -1,0 +1,33 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  fillRule: "nonzero",
+  d: "M11.5 0c.36 0 .687.193.86.497l.052.105 4.27 10.24c-1.893.13-3.67.787-4.75 2.718L9.5 8 6 16h5.261c-.062.48-.104.984-.126 1.513H5.666l-1.9 4.556a.975.975 0 0 1 .834.958c0 .499-.38.91-.87.966L3.613 24H.986A.98.98 0 0 1 0 23.027c0-.499.38-.91.87-.966l.116-.007h.654L10.588.602A.987.987 0 0 1 11.5 0zm6.313 12.684c3.464 0 4.812 2.064 4.812 4.212v5.5c0 .126.103.229.23.229h.457a.688.688 0 0 1 0 1.375h-2.291c-.511 0-.962-.245-1.256-.619-.828.423-1.594.619-2.41.619h-.917c-1.504 0-2.655-.609-3.157-1.67-.445-.942-.267-2.082.466-2.974.944-1.151 2.25-1.364 3.631-1.59.664-.107 1.347-.225 2.039-.446v-.424c0-1.067-.597-2.521-1.604-2.521-1.008 0-1.605 1.454-1.605 2.52 0 .38-.307.688-.687.688h-1.833a.688.688 0 0 1-.688-.687c0-2.148 1.348-4.212 4.813-4.212zM19 19c-.989.348-2.04.795-2.611 1.505-.456.565-.463 1.314-.268 1.805.103.257.361.69.943.69.631 0 1.24-.202 1.936-.649z"
+});
+
+var SvgFonts = function SvgFonts(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgFonts, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/fonts.svg";
+export { ForwardRef as ReactComponent };

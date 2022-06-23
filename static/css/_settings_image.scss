@@ -1,0 +1,19 @@
+@import '../../../assets/scss/variables';
+
+.editor-settings-image__link {
+  width: 22px;
+  fill: $default;
+  cursor: pointer;
+
+  &:hover {
+    fill: $default_hover_dark;
+  }
+
+  &-active {
+    fill: $active;
+
+    &:hover {
+      fill: $active;
+    }
+  }
+}

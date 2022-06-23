@@ -1,0 +1,70 @@
+@import "../../../assets/scss/variables";
+
+$text: #ffffff;
+
+.editor__elements-image{
+  position: relative;
+  font-family: $font_default;
+
+  .editor__elements-image-delete {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -31px;
+
+    &:hover {
+      svg {
+        fill: $default_hover;
+      }
+    }
+
+    svg {
+      fill: $default;
+    }
+  }
+  .editor__elements-image-container{
+    width: 100%;
+    height: 124px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-color: $background_grey;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+
+      .editor__elements-image-upload-label{
+        opacity: 1;
+      }
+    }
+
+    .editor__elements-image-upload-label{
+      padding: 6px 8px;
+      opacity: 0.8;
+      border-radius: 6px;
+      background-color: $active;
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: $text-light;
+      text-transform: uppercase;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        fill: $text-light;
+        margin-right: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../../assets/scss/variables";
+
+.editor__toolbar-body{
+  display: flex;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 6px;
+  min-width: 20px;
+  background-color: $background_light;
+  box-shadow: 0 6px 18px 0 $shadow_grey_medium;
+}

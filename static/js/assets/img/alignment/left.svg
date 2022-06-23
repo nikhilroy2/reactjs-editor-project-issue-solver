@@ -1,0 +1,64 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("title", null, "Left");
+
+var _ref3 = /*#__PURE__*/React.createElement("desc", null, "Created with Sketch.");
+
+var _ref4 = /*#__PURE__*/React.createElement("g", {
+  id: "Editor-fix",
+  stroke: "none",
+  strokeWidth: 1,
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Elements-Copy",
+  transform: "translate(-482.000000, -148.000000)",
+  fill: "#929FB7"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-8",
+  transform: "translate(466.000000, 50.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-6",
+  transform: "translate(16.000000, 65.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Left",
+  transform: "translate(0.000000, 33.000000)"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M4,0 L84,0 L84,40 L4,40 C1.790861,40 0,38.209139 0,36 L0,4 C0,1.790861 1.790861,0 4,0 Z",
+  id: "Rectangle",
+  opacity: 0.200000003
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M34,8 C35.1045695,8 36,8.8954305 36,10 L36,30 C36,31.1045695 35.1045695,32 34,32 C32.8954305,32 32,31.1045695 32,30 L32,10 C32,8.8954305 32.8954305,8 34,8 Z",
+  id: "Rectangle"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M38.2842712,19.3203772 L41.3431458,16.281509 C41.7221741,15.9061637 42.3367004,15.9061637 42.7157288,16.281509 C43.0947571,16.6568542 43.0947571,17.2654092 42.7157288,17.6407545 L41.348,19 L51,19 C51.5522847,19 52,19.4477153 52,20 C52,20.5522847 51.5522847,21 51,21 L41.348,21 L42.7157288,22.3592455 C43.0947571,22.7345908 43.0947571,23.3431458 42.7157288,23.718491 C42.3367004,24.0938363 41.7221741,24.0938363 41.3431458,23.718491 L38.2842712,20.6796228 C37.9052429,20.3042775 37.9052429,19.6957225 38.2842712,19.3203772 Z",
+  id: "Path",
+  opacity: 0.5
+}))))));
+
+var SvgLeft = function SvgLeft(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "84px",
+    height: "40px",
+    viewBox: "0 0 84 40",
+    ref: svgRef
+  }, props), title === undefined ? _ref2 : title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref3, _ref4);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgLeft, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/left.svg";
+export { ForwardRef as ReactComponent };

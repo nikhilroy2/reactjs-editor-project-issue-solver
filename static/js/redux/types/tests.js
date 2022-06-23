@@ -1,0 +1,3 @@
+export const TESTS_GET = 'TESTS_GET';
+export const TESTS_GET_SUCCESS = 'TESTS_GET_SUCCESS';
+export const TESTS_GET_ERROR = 'TESTS_GET_ERROR';

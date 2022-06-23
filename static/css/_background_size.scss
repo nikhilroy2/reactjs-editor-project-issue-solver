@@ -1,0 +1,54 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-background_size{
+  position: relative;
+  font-family: $font_default;
+
+  .editor__elements-background_size-type{
+    display: flex;
+
+    .editor__elements-background_size-type-item{
+      width: 33.33%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+
+
+      .editor__elements-background_size-type-item-icon{
+        margin-right: 8px;
+
+        svg {
+          fill: $default;
+        }
+      }
+
+      .editor__elements-background_size-type-item-label{
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.5px;
+        color: $default;
+        text-transform: uppercase;
+      }
+    }
+
+    .editor__elements-background_size-type-item-active{
+
+      .editor__elements-background_size-type-item-icon {
+        svg {
+          fill: $active;
+        }
+      }
+      .editor__elements-background_size-type-item-label{
+        color: $active;
+      }
+    }
+  }
+
+  .editor__elements-background_size-scale{
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,153 @@
+@import "../../../../../assets/scss/variables";
+
+.editor-edit-font {
+  position: relative;
+  padding: 16px;
+  height: 100vh;
+  background: $background_light;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__confirm {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    height: 100%;
+    width: 300px;
+
+    .editor-languages__popup {
+      border-radius: 0px;
+    }
+  }
+
+  &__preview {
+    position: relative;
+    padding-bottom: 16px;
+    overflow: hidden;
+
+    &-headers {
+      max-width: 262px;
+      overflow: hidden;
+    }
+
+    &-paragraph {
+
+    }
+  }
+
+  &__resize {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    &-from {
+      padding-right: 16px;
+      text-align: right;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    &-range {
+      width: 100%;
+    }
+
+    &-to {
+      padding-left: 16px;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1;
+    }
+  }
+
+
+  &__section {
+    margin-bottom: 8px;
+
+    &-header {
+      position: relative;
+      margin-bottom: 8px;
+
+      &-add-font {
+        color: $active;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 1px;
+
+        &:hover {
+          color: rgba($active, 0.8)
+        }
+      }
+
+      &-title {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    &-headers {
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    &-paragraph {
+      margin-bottom: 16px;
+    }
+
+    &:last-child {
+      padding-top: 24px;
+      border-top: 1px solid $border_grey;
+    }
+
+    &-resize {
+      padding-bottom: 16px;
+      padding-top: 16px;
+      margin-bottom: 16px;
+      border-top: 1px solid $border_grey;
+      border-bottom: 1px solid $border_grey;
+    }
+
+    &-last {
+      margin-bottom: 24px;
+    }
+
+
+  }
+
+
+
+  &__footer {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  &__reset {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: $active;
+
+    svg {
+      margin-right: 8px;
+      fill: $active;
+    }
+
+    &:hover {
+      color: rgba($active, 0.8);
+
+      svg {
+        fill: rgba($active, 0.8);
+      }
+    }
+  }
+}

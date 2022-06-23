@@ -1,0 +1,157 @@
+@import '../../../../../assets/scss/variables';
+
+.editor__sidebar-pages_item-wrap {
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $background_grey_hover;
+    text-decoration: none;
+
+    .editor__sidebar_edit-btn {
+      transition: all 0.3s ease;
+      opacity: 1;
+    }
+  }
+
+  .editor__sidebar-pages_item {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-bottom: 1px solid $border_grey;
+    transition: all 0.3s ease;
+    min-height: 37px;
+
+    .editor__sidebar-pages_text {
+      font-size: 14px;
+      line-height: 24px;
+      color: $text_dark;
+
+      &-grey {
+        color: $main_grey_active !important;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.disable {
+      .editor__sidebar-pages_text {
+        color: $default !important;
+      }
+    }
+  }
+
+  .editor__sidebar_edit-btn {
+    border: none;
+    background: none;
+    margin-left: auto;
+    opacity: 0;
+    position: absolute;
+    right: 2px;
+    top: 6px;
+    padding: 1px 6px;
+    transition: all 0.3s ease;
+
+    svg path {
+      fill: $main_grey_active;
+    }
+
+    &:hover {
+      svg path {
+        fill: #687894;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &-home {
+      right: 32px;
+
+      &:hover {
+        svg {
+          transition: all 0.3s ease;
+          opacity: 1;
+        }
+      }
+
+      &.active {
+        svg {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.active {
+      opacity: 1;
+
+      svg path {
+        fill: $color_page;
+      }
+    }
+  }
+
+  &.active {
+    &:hover {
+      background-color: transparent;
+
+      .editor__sidebar_edit-btn {
+        opacity: 0.5;
+
+        svg path {
+          fill: $active;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .editor__sidebar-pages_item {
+      background-color: $active_light;
+      border-bottom: 2px solid $active;
+      font-weight: 500;
+      color: $active;
+    }
+
+    .editor__sidebar-pages_svg {
+      opacity: 0.3;
+
+      path {
+        fill: $active;
+      }
+    }
+
+    .editor__sidebar-pages_text {
+      font-weight: bold;
+      color: $text_color;
+    }
+  }
+}
+
+.customeTheme {
+  font-size: 12px !important;
+  font-weight: normal !important;
+  font-stretch: normal;
+  line-height: 1.67 !important;
+  text-align: center !important;
+  color: #ffffff !important;
+  border-radius: 4px !important;
+  background-color: rgba(#312e55, 0.95) !important;
+  padding: 2px 8px !important;
+
+  &.place-top {
+    margin-top: -3px !important;
+
+    &:after {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import "../../../assets/scss/variables";
+
+.editor__sortable-list {
+  position: relative;
+}
+
+.editor__sortable-list-icon {
+  color: $active;
+  width: 22px;
+}
+
+.editor__sortable-list-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 39px;
+  border-radius: 4px;
+  background-color: $background_grey;
+  position: relative;
+  font-family: $font_default;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: $text-dark;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 24px;
+  padding-right: 12px;
+  margin-bottom: 12px;
+  border: solid 2px transparent;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  .editor__sortable-list-delete {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+    display: none;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $default;
+    }
+
+    &:hover {
+      svg {
+        fill: $danger;
+      }
+    }
+  }
+
+  .editor__sortable-list-settings {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+    display: none;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $default;
+    }
+  }
+
+  .editor__sortable-list-visible {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+    display: none;
+
+    svg {
+      width: 20px;
+      fill: $default;
+    }
+  }
+
+  .editor__sortable-list-handle {
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    opacity: 1;
+    cursor: pointer;
+
+    svg {
+      width: 8px;
+      fill: $default;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 $shadow_grey_medium;
+    border: solid 2px $active;
+
+
+    .editor__sortable-list-delete, .editor__sortable-list-settings, .editor__sortable-list-visible {
+      display: block;
+    }
+  }
+}
+
+.editor__sortable-list-icon-disabled {
+  color: rgba($main_grey_active, 0.4);
+}
+
+.editor__sortable-list-item-disabled {
+  color: rgba($main_grey_active, 0.4);
+
+  .editor__sortable-list-visible {
+    display: block;
+
+    svg {
+      fill: $active;
+    }
+  }
+}

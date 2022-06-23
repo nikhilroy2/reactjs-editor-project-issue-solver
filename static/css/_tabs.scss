@@ -1,0 +1,49 @@
+@import "../../assets/scss/variables";
+
+.editor__tabs-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .editor__tabs-wrapper_tab-wrap {
+    position: relative;
+
+    .editor__tabs-wrapper_tab {
+      transition: all 0.3s ease;
+      margin: 6px 20px 6px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: $default;
+      cursor: pointer;
+
+      &.active {
+        font-weight: bold;
+        color: $active;
+      }
+
+      &:hover {
+        color: $default_hover_dark;
+      }
+    }
+
+    .editor__tabs-wrapper-dot {
+      position: absolute;
+      top: 7px;
+      right: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $danger;
+    }
+  }
+
+  .editor__tabs-wrapper_tab-background {
+    transition: transform 0.2s;
+    position: absolute;
+    border-radius: 4px;
+    background-color: $active_light;
+    height: 32px;
+    top: 1px;
+  }
+}

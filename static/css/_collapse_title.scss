@@ -1,0 +1,78 @@
+@import "../../../assets/scss/variables";
+.dasdsa {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ .open + .open {
+    border-top: 1px solid transparent;
+  }
+
+.editor__collapse-component-stop {
+  overflow: visible !important;
+}
+
+.editor__collapse-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: 1px solid $border_grey;
+  background-color: $background_light;
+  cursor: pointer;
+
+  svg {
+    fill: $default;
+  }
+
+  &.reverse-default {
+    background-color: transparent;
+  }
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  &:nth-last-child(2) {
+    border-bottom: 1px solid $border_grey;
+  }
+
+  .editor__collapse-title_text {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: $text_dark;
+    text-transform: uppercase;
+  }
+
+  .editor__collapse-title_icon {
+    transition: all 0.3s ease;
+    &.down {
+      transform: rotate(360deg);
+    }
+  }
+
+  &.open {
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+
+    &.reverse-open {
+      background-color: $background_light;
+    }
+
+    &:hover {
+      .editor__collapse-title_icon.up {
+        opacity: 1;
+      }
+    }
+
+    .editor__collapse-title_icon {
+      transition: all 0.5s ease;
+      &.up {
+        transform: rotate(180deg);
+        opacity: 0;
+      }
+    }
+  }
+}

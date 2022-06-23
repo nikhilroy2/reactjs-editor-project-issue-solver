@@ -1,0 +1,32 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  d: "M16.667 10V8.667C16.667 6.094 14.573 4 12 4S7.333 6.094 7.333 8.667V10H7c-.552 0-1 .448-1 1v7c0 1.105.895 2 2 2h8c1.105 0 2-.895 2-2v-7c0-.552-.448-1-1-1h-.333zm-3.669 6.964c.01.094-.02.188-.083.259-.063.07-.154.11-.248.11h-1.334c-.094 0-.185-.04-.248-.11-.063-.071-.093-.165-.083-.26l.21-1.89c-.341-.249-.545-.642-.545-1.073 0-.735.598-1.333 1.333-1.333s1.333.598 1.333 1.333c0 .431-.204.824-.545 1.073l.21 1.89zM9.333 10V8.667C9.333 7.197 10.53 6 12 6c1.47 0 2.667 1.197 2.667 2.667V10H9.333z"
+});
+
+var SvgLock = function SvgLock(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 25,
+    viewBox: "0 0 24 25",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgLock, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/lock.svg";
+export { ForwardRef as ReactComponent };

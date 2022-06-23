@@ -1,0 +1,114 @@
+@import '../../../assets/scss/variables';
+
+.input-tag {
+  background-color: $background_grey;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px 6px 0px 6px;
+  transition: all 0.15s ease;
+
+  &__focus {
+    background-color: $background_light;
+    box-shadow: 0px 0px 0px 2px $active;
+  }
+
+  &:not(:focus-within):hover {
+    transition: all 0.15s ease;
+    background: $default_hover;
+
+    input {
+      transition: all 0.15s ease;
+      background: $default_hover;
+    }
+  }
+}
+
+.input-tag input {
+  border: none;
+  width: 100%;
+  background-color: $background_grey;
+  transition: all 0.15s ease;
+
+  &:focus {
+    background-color: $background_light;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.input-tag__tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.input-tag__tags li {
+  word-break: break-all;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #3479b7;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #ffffff;
+  display: flex;
+  list-style: none;
+  margin-bottom: 6px;
+  margin-right: 4px;
+  padding-right: 4px;
+  padding-left: 8px;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: $danger;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.input-tag__tags li button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 0;
+  margin-left: 4px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  svg path {
+    fill: #ffffff;
+  }
+}
+
+.input-tag__tags li.input-tag__tags-input {
+  background: none;
+  flex-grow: 1;
+  padding: 0;
+}
+
+//Only for IE
+_:-ms-lang(x),
+.input-tag {
+  margin: 0 2px 2px;
+}
+
+_:-ms-lang(x),
+.input-tag input {
+  height: 25px;
+}

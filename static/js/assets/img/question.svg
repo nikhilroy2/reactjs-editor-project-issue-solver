@@ -1,0 +1,33 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  d: "M8 .667a7.333 7.333 0 1 1 0 14.666A7.333 7.333 0 0 1 8 .667zm-.095 10.337a.982.982 0 0 0-.71.268.905.905 0 0 0-.279.68c0 .272.091.495.272.672.181.177.42.265.717.265s.537-.088.718-.265a.898.898 0 0 0 .271-.671.905.905 0 0 0-.277-.681.982.982 0 0 0-.712-.268zm.122-7.282c-.854 0-1.529.222-2.023.666-.462.414-.711.976-.75 1.687l-.004.155h1.77c.008-.33.103-.587.284-.774.181-.186.422-.28.723-.28.635 0 .953.347.953 1.041 0 .23-.061.449-.183.656-.122.208-.368.477-.736.807-.368.33-.622.667-.76 1.008-.123.303-.191.698-.205 1.186l-.002.187h1.562l.025-.376a1.67 1.67 0 0 1 .433-.951l.098-.102.494-.474c.387-.378.657-.722.812-1.032.155-.31.232-.64.232-.989 0-.768-.238-1.362-.714-1.783-.476-.421-1.146-.632-2.009-.632z"
+});
+
+var SvgQuestion = function SvgQuestion(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgQuestion, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/question.svg";
+export { ForwardRef as ReactComponent };

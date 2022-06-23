@@ -1,0 +1,66 @@
+@import "../../../assets/scss/variables";
+
+.translation-mode {
+  position: fixed;
+  bottom: 38px;
+  z-index: 1000;
+  left: calc(50% - 154px);
+
+
+  .translation-mode__body {
+    height: 48px;
+    background-color: rgba($active, 0.9);
+    border-radius: 6px;
+    box-shadow: 0px 8px 24px 0px rgba($background_dark, 0.12);
+    color: $text_light;
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    min-width: 310px;
+  }
+
+  .translation-mode__drag {
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+
+    svg {
+      width: 5px;
+      fill: rgba($text-light, 0.6);
+    }
+  }
+
+  .translation-mode__description {
+    line-height: 24px;
+    padding-right: 10px;
+  }
+
+  .translation-mode__select {
+    width: 114px;
+
+    .editor__component-select {
+      margin-top: 0px;
+    }
+  }
+
+  .translation-mode__close {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      cursor: pointer;
+      width: 16px;
+      fill: rgba($text-light, 0.6);
+
+      &:hover {
+        fill: rgba($text-light, 1);
+      }
+    }
+  }
+}

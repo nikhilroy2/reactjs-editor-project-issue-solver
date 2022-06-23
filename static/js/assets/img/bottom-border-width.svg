@@ -1,0 +1,39 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("g", {
+  fill: "none",
+  fillRule: "nonzero"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#E9ECF1",
+  d: "M30.249 32.351l6.038 6.038h-.002l1.384 1.384a5.937 5.937 0 0 1-2.351.62l-.318.009H7a5.945 5.945 0 0 1-2.657-.623l1.39-1.39h-.001l6.038-6.038h18.479zM40.455 3.668c.306.67.494 1.407.536 2.183l.009.335v28.178c0 .904-.197 1.761-.551 2.531l-1.565-1.565c.057-.232.094-.472.109-.718l.007-.248V6.186a4.06 4.06 0 0 0-.112-.952l1.567-1.566zM1.55 3.655L3.116 5.22a4.044 4.044 0 0 0-.109.718L3 6.186v28.178c0 .328.039.647.113.952l-1.567 1.567a6.036 6.036 0 0 1-.537-2.184L1 34.364V6.186c0-.904.197-1.761.551-2.531zM35 .148c.954 0 1.857.225 2.658.624l-1.547 1.546a3.967 3.967 0 0 0-.881-.15L35 2.16H7c-.39 0-.767.056-1.124.16L4.331.778a5.937 5.937 0 0 1 2.351-.62L7 .148h28z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#929FB7",
+  d: "M6.692 38.37l.208.006h28.177c.335 0 .66-.04.97-.117l1.564 1.564c-.77.355-1.629.553-2.534.553H6.9a6.046 6.046 0 0 1-2.58-.574l1.558-1.556c.262.068.534.11.814.125zm-5.83-5.994h.127L.987 35.6a5.99 5.99 0 0 1-.125-1.223v-2zm40.253 0v2c0 .42-.043.828-.126 1.223l-.001-3.223h.127z"
+}));
+
+var SvgBottomBorderWidth = function SvgBottomBorderWidth(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 42,
+    height: 41,
+    viewBox: "0 0 42 41",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgBottomBorderWidth, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/bottom-border-width.svg";
+export { ForwardRef as ReactComponent };

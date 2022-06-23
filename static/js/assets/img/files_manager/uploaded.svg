@@ -1,0 +1,61 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("title", null, "46CDBD00-BE81-4B1A-A9A7-5669E97BBDA5");
+
+var _ref3 = /*#__PURE__*/React.createElement("desc", null, "Created with sketchtool.");
+
+var _ref4 = /*#__PURE__*/React.createElement("g", {
+  id: "File-manager",
+  stroke: "none",
+  strokeWidth: 1,
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Empty",
+  transform: "translate(-495.000000, -819.000000)",
+  fill: "#929FB7"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-3",
+  transform: "translate(300.000000, 250.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-4",
+  transform: "translate(24.000000, 553.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-5"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Icons-/-Modals-/-Upload-grey",
+  transform: "translate(171.000000, 16.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "folder",
+  transform: "translate(2.000000, 1.000000)"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M11,16 L11,11.498 L12.2110435,12.6954969 C12.5888114,13.0702699 13.1832392,13.0990986 13.5943393,12.781983 L13.6930636,12.6954969 C14.0708315,12.3207239 14.0998905,11.7310085 13.7802408,11.3231674 L13.6930636,11.2252259 L10.74101,8.3045031 C10.5989568,8.16357605 10.4262677,8.07156582 10.2442106,8.02847242 C10.2346105,8.02763003 10.2256053,8.0255091 10.216554,8.02351082 C10.1942198,8.01764597 10.1711732,8.0136213 10.1480378,8.01036427 L10.1166211,8.00672773 L10.0929891,8.00407604 C10.0685789,8.00193153 10.0441074,8.00063323 10.0196229,8.00018114 L9.98082404,8.00018018 L9.98082404,8.00018018 C9.95656306,8.00059782 9.93175546,8.00190215 9.90701086,8.00407604 C9.88853378,8.00597017 9.87020947,8.00817568 9.85204445,8.01086967 C9.82882685,8.0136213 9.80578018,8.01764597 9.78286401,8.0224383 C9.77439474,8.0255091 9.76538951,8.02763003 9.75643215,8.02987175 C9.61027226,8.06322701 9.47051925,8.1287846 9.34773319,8.22582808 L9.25898996,8.3045031 L6.30693641,11.2252259 C5.89768786,11.63123 5.89768786,12.2894928 6.30693641,12.6954969 C6.6847043,13.0702699 7.27913207,13.0990986 7.69023224,12.781983 L7.78895649,12.6954969 L9,11.497 L9,16 L2,16 C0.8954305,16 1.3527075e-16,15.1045695 0,14 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L5.58340215,0 C6.0669686,-7.54963531e-16 6.53415981,0.175199632 6.89848721,0.49316514 L9.43492748,2.70683486 C9.79925488,3.02480037 10.2664461,3.2 10.7500125,3.2 L18,3.2 C19.1045695,3.2 20,4.0954305 20,5.2 L20,14 C20,15.1045695 19.1045695,16 18,16 L11,16 L11,21.1428571 C11,21.616211 10.5522461,22 10,22 C9.44775388,22 9,21.616211 9,21.1428571 L9,16 L11,16 Z",
+  id: "Combined-Shape"
+}))))))));
+
+var SvgUploaded = function SvgUploaded(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "24px",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title === undefined ? _ref2 : title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref3, _ref4);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgUploaded, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/uploaded.svg";
+export { ForwardRef as ReactComponent };

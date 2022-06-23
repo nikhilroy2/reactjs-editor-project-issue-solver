@@ -1,0 +1,33 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  d: "M9.8808717,2.67414873 L13.3116344,6.1085129 L4.50744002,14.9211874 C4.47791333,14.950745 4.44342324,14.9747695 4.40562421,14.9920185 L4.34665078,15.0126552 L0.43009394,15.9895828 C0.40242856,15.99657 0.37400173,16 0.34620942,16 C0.255472,16 0.16676506,15.963921 0.10166256,15.8987502 C0.03282904,15.8298444 -0.0031106,15.7357341 0.00021128,15.6404205 L0.01016372,15.5690847 L0.98593992,11.6484165 C0.99609236,11.6081875 1.01368992,11.5698218 1.03741654,11.5355402 L1.07743876,11.4874584 L9.8808717,2.67414873 Z M12.0619961,0.49149687 C12.6777116,-0.12498457 13.725099,-0.16181084 14.3922343,0.38260673 L14.5126678,0.49149687 L15.4926319,1.47248971 C15.8197942,1.79999546 16,2.23573821 16,2.69917538 C16,3.1046829 15.8620299,3.48898686 15.6083642,3.79804496 L15.4926319,3.92573398 L14.292233,5.12739304 L10.8615972,1.69315592 L12.0619961,0.49149687 Z",
+  transform: "translate(4 4)"
+});
+
+var SvgEditTranslation = function SvgEditTranslation(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgEditTranslation, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/edit-translation.svg";
+export { ForwardRef as ReactComponent };

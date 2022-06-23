@@ -1,0 +1,54 @@
+@import "../../../../assets/scss/variables";
+
+.wysiwyg-actions{
+  padding: 8px;
+  display: flex;
+
+  .wysiwyg-actions__item{
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+    margin-right: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    svg {
+      fill: $default;
+    }
+
+    &:first-child{
+      margin-left: 0px;
+    }
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+
+  .wysiwyg-actions__item-active{
+
+    svg {
+      fill: $active;
+    }
+  }
+}
+
+.wysiwyg-actions__item-close{
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  cursor: pointer;
+
+  svg {
+    fill: $default;
+  }
+
+  &:hover {
+    svg {
+      fill: $default_hover_dark;
+    }
+  }
+}

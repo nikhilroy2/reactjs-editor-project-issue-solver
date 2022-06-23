@@ -1,0 +1,9 @@
+@import "./variables";
+
+.sidebar-block__top {
+  z-index: $zIndex_block + 10!important;
+}
+
+.sidebar-block__left {
+  z-index: $zIndex_block + 25!important;
+}

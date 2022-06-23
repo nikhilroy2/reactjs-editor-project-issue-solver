@@ -1,0 +1,92 @@
+@import "../../../../assets/scss/variables";
+
+.editor__sidebar-blocks{
+  position: relative;
+  background: $background_light;
+
+  .editor__sidebar-blocks-header {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .editor__sidebar-blocks-body {
+    height: calc(100vh - 85px);
+    overflow-y: scroll;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .editor__sidebar-blocks-list{
+
+      .editor__sidebar-blocks-item{
+        margin-bottom: 14px;
+        border-radius: 4px;
+        background-color: $background_light;
+        cursor: grab;
+        border: solid 1px rgba(49, 46, 85, 0.1);
+        min-height: 24px;
+
+        &:not(.editor__sidebar-blocks-item-disabled) {
+          &:hover {
+            box-shadow: 0 8px 24px 0 rgba(49, 46, 85, 0.08);
+            border: solid 1px rgba(49, 46, 85, 0.1);
+
+            .editor__sidebar-blocks-item-image{
+              opacity: 0.8;
+            }
+          }
+        }
+
+        .editor__sidebar-blocks-item-image{
+          display: flex;
+          max-width: 100%;
+          border-radius: 4px;
+        }
+      }
+
+      .editor__sidebar-blocks-item-disabled {
+        cursor: no-drop;
+        box-shadow: none!important;
+        position: relative;
+
+        .editor__sidebar-blocks-item-disabled-icon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba($background_light, 0.6);
+
+          svg {
+            fill: $default;
+          }
+        }
+
+        .editor__sidebar-blocks-item-disabled-tooltip {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: no-drop;
+        }
+      }
+
+      .editor__sidebar-blocks-item-empty {
+        width: 100%;
+        height: 120px;
+        border-radius: 4px;
+        background-color: $background_light;
+        background-image: url("../../../../assets/img/img-placeholder-1.png");
+        background-size: 260px;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+
+      .editor__sidebar-blocks-list-flip {
+        position: inherit !important;
+      }
+    }
+  }
+}

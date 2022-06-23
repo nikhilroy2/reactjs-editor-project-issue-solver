@@ -1,0 +1,58 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("title", null, "Group 5");
+
+var _ref3 = /*#__PURE__*/React.createElement("desc", null, "Created with Sketch.");
+
+var _ref4 = /*#__PURE__*/React.createElement("g", {
+  id: "Other",
+  stroke: "none",
+  strokeWidth: 1,
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Other-Copy",
+  transform: "translate(-608.000000, -252.000000)",
+  fill: "#929FB7"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-2",
+  transform: "translate(466.000000, 252.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group-5",
+  transform: "translate(142.000000, 0.000000)"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M122,0 C124.209139,-4.05812251e-16 126,1.790861 126,4 L126,68 C126,70.209139 124.209139,72 122,72 L4,72 C1.790861,72 2.705415e-16,70.209139 0,68 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L122,0 Z M78,16 L48,16 C45.2385763,16 43,18.2385763 43,21 L43,21 L43,51 C43,53.7614237 45.2385763,56 48,56 L48,56 L78,56 C80.7614237,56 83,53.7614237 83,51 L83,51 L83,21 C83,18.2385763 80.7614237,16 78,16 L78,16 Z",
+  id: "Combined-Shape",
+  opacity: 0.200000003
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M79,16 C81.209139,16 83,17.790861 83,20 L83,52 C83,54.209139 81.209139,56 79,56 L47,56 C44.790861,56 43,54.209139 43,52 L43,20 C43,17.790861 44.790861,16 47,16 L79,16 Z M79,18 L47,18 C45.8954305,18 45,18.8954305 45,20 L45,52 C45,53.1045695 45.8954305,54 47,54 L79,54 C80.1045695,54 81,53.1045695 81,52 L81,20 C81,18.8954305 80.1045695,18 79,18 Z M61,48 C60.4477153,48 60,47.5522847 60,47 C60,46.4477153 60.4477153,46 61,46 L62,46 L62,26 L54,26 L54,27 C54,27.5522847 53.5522847,28 53,28 C52.4477153,28 52,27.5522847 52,27 L52,25 C52,24.4477153 52.4477153,24 53,24 L73,24 C73.5522847,24 74,24.4477153 74,25 L74,27 C74,27.5522847 73.5522847,28 73,28 C72.4477153,28 72,27.5522847 72,27 L72,26 L64,26 L64,46 L65,46 C65.5522847,46 66,46.4477153 66,47 C66,47.5522847 65.5522847,48 65,48 L61,48 Z",
+  id: "Shape",
+  fillRule: "nonzero"
+})))));
+
+var SvgLogotypeText = function SvgLogotypeText(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "126px",
+    height: "72px",
+    viewBox: "0 0 126 72",
+    ref: svgRef
+  }, props), title === undefined ? _ref2 : title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref3, _ref4);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgLogotypeText, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/logotype_text.svg";
+export { ForwardRef as ReactComponent };

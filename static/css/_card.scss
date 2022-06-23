@@ -1,0 +1,151 @@
+@import "../../assets/scss/variables";
+
+$bg_active: rgba(49, 46, 85, 0.8);
+
+.editor__card-uniq {
+  margin: 12px 0;
+  width: 100%;
+  height: 180px;
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 $shadow_grey_light;
+  background-color: $background_light;
+  transition: all 0.5s ease;
+
+  &:hover {
+    box-shadow: 0 16px 48px 0 $shadow_grey_medium;
+  }
+
+  .editor__card-uniq_image {
+    position: relative;
+
+    &:hover {
+      .editor__card-uniq_image-hide {
+        opacity: 1;
+      }
+    }
+
+    .editor__card-uniq_image-hide {
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: all 0.5s ease;
+
+      &.active {
+        background: $bg_active;
+      }
+
+      &.default {
+        background-color: rgba($background_light, 0.8);
+      }
+
+      .editor__card-uniq_image-hide_active-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .styles-brush {
+          margin-right: 12px;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #fff;
+        }
+      }
+
+      .editor__card-uniq_image-hide_default-button {
+        border: 0;
+        padding: 8px 16px;
+        border-radius: 6px;
+        box-shadow: 0 8px 24px 0 $active_light;
+        background-color: $active;
+        font-weight: 500;
+        line-height: 24px;
+        color: $text-light;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+
+    .editor__card-uniq_image-hide-active {
+      opacity: 1;
+      background: $bg_active !important;
+
+      .editor__card-uniq_image-hide_loading-button {
+        color: #fff;
+        border: none;
+        background: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .editor__card-uniq_image-hide-display-none {
+      display: none;
+    }
+
+    .editor__card-uniq_image--bg {
+      width: 100%;
+      height: 120px;
+      border-radius: 4px;
+      background-color: $background_grey;
+      background-image: url("../../assets/img/background_page.svg");
+      background-size: 75px;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      .editor__card-uniq_image--preview {
+        width: 100%;
+        height: 120px;
+        border-radius: 4px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .editor__card-uniq_label-wrap {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+
+    .editor__card-uniq_label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $text-dark;
+    }
+
+    .editor__card-uniq_settings-svg {
+      cursor: pointer;
+
+      &:hover {
+        path {
+          transition: all 0.5s ease;
+          fill: $active;
+        }
+      }
+    }
+  }
+}
+
+.editor__sidebar-styles-body__active {
+  .editor__card-uniq_image-hide {
+    &.active {
+      cursor: pointer;
+    }
+  }
+}

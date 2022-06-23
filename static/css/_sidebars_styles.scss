@@ -1,0 +1,32 @@
+@import "../../../../assets/scss/variables";
+
+@mixin header {
+  .editor__sidebar-styles_header {
+    padding: 0 24px;
+    margin: 24px 0 4px 0;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: $text_dark;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+.editor__sidebar-styles {
+  position: relative;
+  font-family: $font_default;
+
+  .editor__sidebar-styles-body {
+    @include header;
+    .editor__sidebar-styles-body__active {
+      padding: 0 24px;
+    }
+
+    @include header;
+    .editor__sidebar-styles-body__other {
+      height: calc(100vh - 288px);
+      overflow-y: auto;
+      padding: 0 24px;
+    }
+  }
+}

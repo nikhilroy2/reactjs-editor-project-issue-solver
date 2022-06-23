@@ -1,0 +1,91 @@
+@import "../../../assets/scss/variables";
+
+.editor__elements-rb{
+  position: relative;
+  font-family: $font_default;
+  flex-wrap: wrap;
+  display: flex;
+
+
+  .editor__elements-rb-row {
+    display: block;
+  }
+}
+
+.editor__elements-rb-column {
+  display: flex;
+  flex-wrap: wrap;
+
+  .editor__elements-rb-row {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+}
+
+.editor__elements-rb-inline {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .editor__elements-rb-row {
+    margin-right: 16px;
+  }
+}
+
+.editor__elements-rb-container {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.editor__elements-rb-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.editor__elements-rb-container .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: $background_grey_hover;
+  border-radius: 50%;
+}
+
+.editor__elements-rb-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.editor__elements-rb-container input:checked ~ .checkmark {
+  background-color: $active;
+}
+
+
+.editor__elements-rb-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.editor__elements-rb-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.editor__elements-rb-container .checkmark:after {
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $background_light;
+}

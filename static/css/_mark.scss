@@ -1,0 +1,18 @@
+.editor__mark-indicator {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #d7dce4;
+  }
+}

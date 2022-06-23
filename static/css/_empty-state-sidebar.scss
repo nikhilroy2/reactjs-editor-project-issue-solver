@@ -1,0 +1,17 @@
+@import "../../../../assets/scss/variables";
+
+.editor-empty-state__sidebar {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+
+  .editor-empty-state__sidebar-wrapper {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

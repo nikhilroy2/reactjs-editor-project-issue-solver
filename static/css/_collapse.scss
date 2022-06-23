@@ -1,0 +1,10 @@
+@import "../../../assets/scss/variables";
+
+.editor__collapse-component {
+  transition: height 500ms;
+  background-color: transparent;
+
+  &.reverse {
+    background-color: $background_light;
+  }
+}

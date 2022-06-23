@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables";
+
+.editor__locked {
+  width:100%;
+  height:100%;
+  background-color: $background_grey;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: $font_default;
+  text-align: center;
+
+  .editor__locked-button {
+    margin-bottom: 24px;
+  }
+
+  .editor__locked-description {
+    max-width: 420px;
+    color: $default;
+  }
+}

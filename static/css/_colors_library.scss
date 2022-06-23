@@ -1,0 +1,197 @@
+@import '../../../assets/scss/variables';
+
+.editor__popup-colors-library {
+  position: absolute !important;
+  z-index: 10000000;
+  width: 200px;
+  background-color: $background_light;
+  box-shadow: 0 9px 25px 0 $shadow_grey_light;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 6px;
+  left: 108px;
+  top: 80px;
+  font-family: $font_default;
+
+  .editor__popup-colors-library-header {
+    min-height: 57px;
+    border-bottom: 1px solid $border_grey;
+    position: relative;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: $text-dark;
+    box-shadow: 0 2px 6px 0 $shadow_grey_light;
+    line-height: 1.71;
+    letter-spacing: 0.5px;
+    z-index: 10;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .editor__popup-colors-library-header-hex {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: $text-dark;
+    }
+
+    .editor__popup-colors-library-header-hex-input {
+      position: relative;
+
+      .editor__popup-colors-library-header-hex-input-label {
+        position: absolute;
+        top: 5px;
+        left: 12px;
+        color: $default;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+      }
+
+      input {
+        outline: none;
+        border: none;
+        box-shadow: none;
+        width: 90%;
+        height: 32px;
+        border-radius: 4px;
+        background-color: $background_grey;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: normal;
+        color: $text_dark;
+        padding-left: 26px;
+        padding-right: 12px;
+        transition: all 0.15s ease;
+
+        &:hover {
+          background-color: $default_hover;
+        }
+
+        &:focus {
+          background-color: #ffffff;
+          box-shadow: 0px 0px 0px 2px $text_color;
+        }
+      }
+    }
+
+    .editor__popup-colors-library-header-pin {
+      background-color: $background_light;
+      background-image: url('../../../assets/img/color_transparent.svg');
+      background-repeat: repeat-x;
+      background-position: center center;
+      border-radius: 50%;
+
+      .editor__popup-colors-library-header-pin-icon {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2), 0px 0px 0px 2px #fff;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          fill: $background_light;
+        }
+      }
+    }
+  }
+
+  .editor__popup-colors-library-body {
+    padding: 16px;
+
+    .editor__popup-colors-library-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -4px;
+      margin-right: -4px;
+      margin-bottom: -12px;
+
+      .editor__popup-colors-library-item {
+        width: 20%;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .editor__popup-colors-library-item-bg {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-image: url('../../../assets/img/color_transparent.svg');
+          background-size: 100%;
+          background-repeat: repeat-x;
+          background-position: center center;
+          cursor: pointer;
+          position: relative;
+
+          .editor__popup-colors-library-item-color {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            z-index: 1;
+            border-radius: 50%;
+            box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2), 0px 0px 0px 2px #fff;
+          }
+        }
+      }
+
+      .editor__popup-colors-library-item-active {
+        .editor__popup-colors-library-item-bg {
+          &:before {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-image: url('../../../assets/img/active_color.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+        }
+      }
+    }
+  }
+
+  .editor__popup-colors-library-picker {
+    position: absolute;
+    top: 0px;
+
+    .editor__popup-colors-library-picker-wrap {
+      position: relative;
+    }
+
+    .sketch-picker {
+      box-shadow: none !important;
+      border: none !important;
+      z-index: 31231231;
+    }
+  }
+
+  .editor__popup-colors-library-picker-right {
+    left: 206px;
+  }
+
+  .editor__popup-colors-library-picker-left {
+    right: calc(100% + 10px);
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../../assets/scss/variables";
+
+.editor__publish-button {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $warning_light;
+  font-size: 16px;
+
+  &.success {
+    background-color: $success_light;
+  }
+
+  &.error {
+    background-color: $danger_light;
+  }
+
+  .editor__publish-button_clicker {
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px 0 $warning_light;
+    background-color: $warning;
+    transition: all 1s ease;
+
+    &.error {
+      background-color: $danger;
+    }
+
+    &.success {
+      background-color: $success;
+    }
+
+    &.success,
+    &.error,
+    &.loader {
+      cursor: pointer;
+    }
+  }
+}

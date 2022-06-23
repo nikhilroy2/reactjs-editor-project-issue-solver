@@ -1,0 +1,33 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  d: "M14.518 15.008h2.667c.005.106.007.214.007.325 0 .963-.215 1.797-.645 2.5a4.167 4.167 0 0 1-1.819 1.611c-.782.37-1.688.556-2.719.556-1.091 0-2.025-.2-2.8-.6-.777-.4-1.365-.926-1.765-1.578a4.266 4.266 0 0 1-.636-2.133c0-.119.036-.226.109-.322a.33.33 0 0 1 .273-.145h1.655a.48.48 0 0 1 .327.111c.085.074.164.178.236.311.122.504.397.926.828 1.267.43.34 1.021.511 1.773.511.849 0 1.488-.174 1.919-.522.43-.348.645-.826.645-1.433 0-.165-.018-.318-.055-.46zm-9.522-2a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5l2.816.002c-.451-.648-.677-1.495-.677-2.543 0-.86.194-1.626.582-2.3a4.1 4.1 0 0 1 1.664-1.59C10.103 4.194 10.942 4 11.9 4c1.006 0 1.876.215 2.61.644.733.43 1.291.967 1.673 1.612.382.644.585 1.285.61 1.922a.522.522 0 0 1-.11.322.33.33 0 0 1-.273.144h-1.727c-.267 0-.45-.133-.546-.4-.06-.474-.297-.87-.71-1.188-.412-.319-.92-.478-1.527-.478-.667 0-1.191.155-1.573.466-.382.312-.573.763-.573 1.356 0 .4.097.733.29 1 .195.267.498.5.91.7.412.2 1.013.426 1.8.678.272.074.53.151.773.23h5.469a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-14z"
+});
+
+var SvgCrossed = function SvgCrossed(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgCrossed, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/crossed.svg";
+export { ForwardRef as ReactComponent };

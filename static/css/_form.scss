@@ -1,0 +1,112 @@
+@import "../../assets/scss/variables";
+
+.editor__form-group{
+  position: relative;
+  margin-bottom: 16px;
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+.editor__form-group-correct {
+  margin-bottom: 8px;
+}
+
+.editor__form-row-vertical{
+  position: relative;
+  font-family: $font_default;
+
+  .editor__form-row-vertical-label{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: $text-dark;
+    margin-bottom: 8px;
+
+    svg {
+      display: inline-block;
+      vertical-align: -3px;
+      margin-left: 4px;
+      cursor: pointer;
+      fill: $default;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      &:hover {
+        fill: $active;
+      }
+    }
+  }
+
+  .editor__form-row-vertical-label-open {
+    svg {
+      fill: $active;
+    }
+  }
+
+  .editor__form-row-vertical-content{
+
+  }
+}
+
+
+.editor__form-row-horizontal{
+  display: flex;
+  justify-content: space-between;
+
+  .editor__form-row-horizontal-label{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: $text-dark;
+  }
+
+  .editor__form-row-horizontal-content{
+
+  }
+}
+
+
+.editor__form-row-vertical-question{
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: $default;
+}
+
+.editor__form-category {
+  position: relative;
+
+  .editor__form-category-title {
+    font-family: $font_default;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.5px;
+    color: $text-dark;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    padding-top: 12px;
+  }
+
+  &:first-child {
+    .editor__form-category-title {
+      padding-top: 0px;
+    }
+  }
+}

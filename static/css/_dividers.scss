@@ -1,0 +1,108 @@
+$divider_color: rgba(255, 255, 255, 0.78);
+
+.editor__block-body .editor__block_sides-top span {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  color: $divider_color;
+  z-index: 12;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor__block-body .editor__block_sides-bottom span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  color: $divider_color;
+  z-index: 12;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor__divider-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  color: $divider_color;
+  z-index: 12;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.editor__divider-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  color: $divider_color;
+  z-index: 12;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+// Transition dividers
+.divider-top,
+.divider-bottom {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.customeTheme {
+  font-size: 12px !important;
+  font-weight: normal !important;
+  font-stretch: normal;
+  line-height: 1.67 !important;
+  text-align: center !important;
+  color: #ffffff !important;
+  border-radius: 4px !important;
+  background-color: rgba(#312e55, 0.95) !important;
+  padding: 2px 8px !important;
+
+  &.place-top {
+    margin-top: -3px !important;
+
+    &:after {
+      display: none !important;
+    }
+  }
+
+  &.place-bottom {
+    margin-top: -3px !important;
+
+    &:after {
+      display: none !important;
+    }
+  }
+
+  &.place-left {
+
+    &:after {
+      display: none !important;
+    }
+  }
+
+  &.place-right {
+
+    &:after {
+      display: none !important;
+    }
+  }
+}

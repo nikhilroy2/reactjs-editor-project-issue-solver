@@ -1,0 +1,39 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("g", {
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M8.7 4c-.387 0-.7.376-.7.84v1.32c0 .464.313.84.7.84h12.6c.387 0 .7-.376.7-.84V4.84c0-.464-.313-.84-.7-.84H8.7zm0 13c-.387 0-.7.376-.7.84v1.32c0 .464.313.84.7.84h12.6c.387 0 .7-.376.7-.84v-1.32c0-.464-.313-.84-.7-.84H8.7zm0-6.5c-.387 0-.7.376-.7.84v1.32c0 .464.313.84.7.84h12.6c.387 0 .7-.376.7-.84v-1.32c0-.464-.313-.84-.7-.84H8.7z"
+}), /*#__PURE__*/React.createElement("path", {
+  fillRule: "nonzero",
+  stroke: "#919EB6",
+  strokeWidth: 0.2,
+  d: "M3.828 16.3c.592 0 .889.257.889.77v.763c0 .345-.105.562-.315.651.21.08.315.28.315.602v.89c0 .517-.297.776-.89.776h-.776c-.588 0-.882-.259-.882-.777v-.65h.994v.517c0 .117.063.175.189.175h.189c.126 0 .189-.058.189-.175v-.826c0-.065-.014-.11-.042-.136-.028-.026-.077-.039-.147-.039h-.546v-.693h.546c.07 0 .119-.013.147-.038.028-.026.042-.07.042-.13v-.77c0-.117-.063-.175-.19-.175h-.188c-.126 0-.19.058-.19.175v.525H2.17v-.665c0-.513.294-.77.882-.77h.777zm.014-6.5c.597 0 .896.257.896.77v.567c0 .215-.032.4-.095.557a2.339 2.339 0 0 1-.304.514l-.896 1.31h1.309v.734H2.225v-.679l1.232-1.652a1.38 1.38 0 0 0 .234-.385c.04-.112.06-.25.06-.413v-.413c0-.117-.063-.175-.19-.175h-.174c-.122 0-.182.058-.182.175v.588H2.204v-.728c0-.513.294-.77.882-.77h.756zm.35-6.5v4.452H3.19V4.035H2.61V3.3h1.582z"
+}));
+
+var SvgOlList = function SvgOlList(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgOlList, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/ol_list.svg";
+export { ForwardRef as ReactComponent };

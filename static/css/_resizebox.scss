@@ -1,0 +1,310 @@
+@import "../../../assets/scss/variables";
+
+.editor__resizebox {
+  position: relative;
+}
+
+.editor__resizebox-active{
+
+  .ui-resizable-s {
+    opacity: 1!important;
+
+    &:before {
+      transform: scale(1) !important;
+    }
+  }
+}
+
+.editor__resizebox-tooltip{
+  border-radius: 6px;
+  background-color: #2e2f30;
+  color: $text-light;
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  padding: 1px 8px;
+  font-family: $font_default;
+  margin-top: -32px;
+  display: none;
+}
+
+.editor__resizebox-tooltip-active{
+  display: block;
+}
+.editor__resizebox-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  z-index: 11;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .ui-resizable-s {
+    background-color: $background_dark;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: auto!important;
+    left: auto !important;
+    opacity: 0;
+    cursor: ns-resize;
+
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+
+    &:before{
+      content: ' ';
+      width: 35px;
+      height: 35px;
+      background-image: url("../../../assets/img/drag_line.svg");
+      border-radius: 50%;
+      display: block;
+      transform: scale(0.3);
+      cursor: ns-resize;
+
+      -webkit-transition: all 0.35s ease;
+      -moz-transition: all 0.35s ease;
+      -o-transition: all 0.35s ease;
+      -ms-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+
+  }
+
+  &:hover{
+    .ui-resizable-s{
+      opacity: 1;
+
+      &:before{
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.editor__resizebox-bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100% !important;
+  z-index: 101;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .ui-resizable-s {
+    background-color: $background_dark;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: auto!important;
+    left: auto !important;
+    opacity: 0;
+    cursor: ns-resize;
+
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+
+    &:before{
+      content: ' ';
+      width: 35px;
+      height: 35px;
+      background-image: url("../../../assets/img/drag_line.svg");
+      border-radius: 50%;
+      display: block;
+      transform: scale(0.3);
+      cursor: ns-resize;
+
+      -webkit-transition: all 0.35s ease;
+      -moz-transition: all 0.35s ease;
+      -o-transition: all 0.35s ease;
+      -ms-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+
+  }
+
+  &:hover{
+    .ui-resizable-s{
+      opacity: 1;
+
+      &:before{
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+
+.editor__resizebox-left{
+  position: absolute;
+  top: 0;
+  left: 0px !important;
+  height: 100%;
+  width: auto;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .ui-resizable-w {
+    background-color: $background_dark;
+    width: 1px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: auto!important;
+    left: auto !important;
+    opacity: 0;
+
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+
+    &:before{
+      content: ' ';
+      width: 35px;
+      height: 35px;
+      background-image: url("../../../assets/img/drag_line.svg");
+      border-radius: 50%;
+      display: block;
+      transform: scale(0.3);
+      position: absolute;
+
+      -webkit-transition: all 0.35s ease;
+      -moz-transition: all 0.35s ease;
+      -o-transition: all 0.35s ease;
+      -ms-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+
+  }
+
+  &:hover{
+    .ui-resizable-w{
+      opacity: 1;
+
+      &:before{
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.editor__richtext-resize-tooltip{
+  border-radius: 6px;
+  background-color: #2e2f30;
+  color: $text-light;
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  padding: 1px 8px;
+  font-family: $font_default;
+  z-index: 10;
+}
+
+.editor__richtext-resize-tooltip-left{
+  right: 16px;
+}
+
+.editor__richtext-resize-tooltip-right{
+  left: 16px;
+}
+
+.editor__richtext-resize-left{
+  background: rgba(49, 46, 85, 0.1);
+  position: absolute;
+  height: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+
+  .ui-resizable-e{
+    width: 1px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    right: 0px!important;
+    cursor: ew-resize;
+
+    &:before{
+      content: ' ';
+      width: 20px;
+      height: 16px;
+      background-image: url("../../../assets/img/resize_text.svg");
+      display: block;
+      position: absolute;
+      margin-top: 0px;
+      right: -3px;
+    }
+  }
+}
+
+.editor__richtext-resize-right{
+  background: rgba(49, 46, 85, 0.1);
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  left: auto!important;
+  display: flex;
+  align-items: center;
+
+  .ui-resizable-w{
+    width: 1px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 0px!important;
+    cursor: ew-resize;
+
+    &:before{
+      content: ' ';
+      width: 20px;
+      height: 16px;
+      background-image: url("../../../assets/img/resize_text.svg");
+      display: block;
+      position: absolute;
+      margin-top: 0px;
+      left: -3px;
+    }
+  }
+}
+
+//Only for IE
+_:-ms-lang(x),
+.editor__resizebox-top .ui-resizable-s  {
+  left: 0 !important;
+}
+
+_:-ms-lang(x),
+.editor__resizebox-bottom .ui-resizable-s {
+  left: 0 !important;
+}

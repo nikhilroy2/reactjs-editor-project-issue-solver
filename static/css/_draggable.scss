@@ -1,0 +1,94 @@
+@import "../../../../assets/scss/variables";
+@import "../../../Core/Snippets/_snippets.scss";
+
+.sortable-placeholder {
+  height: 100px!important;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  background-color: $background_color;
+  border-radius: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: "Insert block";
+    text-transform: uppercase;
+    color: $text-light;
+    font-weight: bold;
+    display: block;
+    font-family: $font_default !important;
+  }
+}
+
+.editor-wrapper-content-page-empty {
+  .sortable-placeholder {
+    height: auto!important;
+  }
+}
+
+.editor-wrapper-content-header {
+  .sortable-placeholder {
+    background: $color_header;
+  }
+}
+
+.editor-wrapper-content-footer {
+  .sortable-placeholder {
+    background: $color_header;
+  }
+}
+
+.editor-wrapper-content-navbar {
+  .sortable-placeholder {
+    background: $color_navbar;
+  }
+}
+
+.sortable-placeholder-first {
+  height: 100%!important;
+}
+
+.editor__draggable-helper {
+  display: flex;
+  padding: 3px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: $text_light;
+  background-color: $main_grey_active;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 8px 24px 0 $shadow_grey_medium;
+  -webkit-box-shadow: 0 8px 24px 0 $shadow_grey_medium;
+  -moz-box-shadow: 0 8px 24px 0 $shadow_grey_medium;
+}
+
+.editor__sortable-helper {
+  display: flex;
+  justify-content: center;
+  max-width: 170px;
+  text-align: center;
+  height: 24px !important;
+  line-height: 18px;
+  padding: 3px 20px;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  font-weight: bold;
+  color: $text_light;
+  background-color: $main_grey_active;
+  cursor: all-scroll !important;
+  white-space: nowrap;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 8px 24px 0 $shadow_grey_medium;
+  -webkit-box-shadow: 0 8px 24px 0 $shadow_grey_medium;
+  -moz-box-shadow: 0 8px 24px 0 $shadow_grey_medium;
+}
